@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F0F4F8;
+  --color-cream-dark: #E1EAF3;
+  --color-cream-deeper: #CCDAE8;
+  --color-sage: #8A9E77;
+  --color-sage-light: #B5C9A5;
+  --color-rose: #C9A8A0;
+  --color-taupe: #7A9DB8;
+  --color-blue: #587CA5;
+  --color-blue-dark: #4A6A8F;
+  --color-mist: #C2D2E2;
+  --color-brown: #1C3148;
+  --color-charcoal: #0F1E2D;
+
+  --font-heading: var(--font-cormorant);
+  --font-body: var(--font-lato);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float 10s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+body {
+  background-color: #F0F4F8;
+  color: #1C3148;
+}
+
+/* Artwork placeholder gradients */
+.art-placeholder-1 { background: linear-gradient(135deg, #E8D5C4 0%, #F0E8DC 50%, #D4C4B8 100%); }
+.art-placeholder-2 { background: linear-gradient(135deg, #C5D4B8 0%, #E8F0E0 50%, #B8C8A8 100%); }
+.art-placeholder-3 { background: linear-gradient(135deg, #E0C8C8 0%, #F0E0E0 50%, #C8B0B0 100%); }
+.art-placeholder-4 { background: linear-gradient(135deg, #D4C8B0 0%, #EDE5D4 50%, #C0B098 100%); }
+.art-placeholder-5 { background: linear-gradient(135deg, #C8D8D0 0%, #E0EDE8 50%, #B0C4BC 100%); }
+.art-placeholder-6 { background: linear-gradient(135deg, #D8C8D8 0%, #EDE5ED 50%, #C0A8C0 100%); }
+.art-placeholder-7 { background: linear-gradient(135deg, #E0D4B8 0%, #EDE8D8 50%, #C8BC98 100%); }
+.art-placeholder-8 { background: linear-gradient(135deg, #D0D8C0 0%, #E8EDE0 50%, #B8C8A0 100%); }
+.art-placeholder-9 { background: linear-gradient(135deg, #E4CCC4 0%, #F0E4E0 50%, #D0B4AC 100%); }
+.art-placeholder-10 { background: linear-gradient(135deg, #C8D0D8 0%, #E0E8F0 50%, #A8B8C8 100%); }
+.art-placeholder-11 { background: linear-gradient(135deg, #DDD0C0 0%, #EDE8DC 50%, #C8B8A4 100%); }
+.art-placeholder-12 { background: linear-gradient(135deg, #C8D4C0 0%, #E4ECE0 50%, #A8BC9C 100%); }
