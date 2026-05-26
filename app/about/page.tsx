@@ -71,7 +71,7 @@ export default function AboutPage() {
                 Kathy is a self-taught artist whose work is rooted in a lifelong love of art, nature, and the stories we tell through the changing seasons. Now, as a grandmother, she finds that world again in her grandchildren, whose light and curiosity remind her daily of what Chesterton meant.
               </p>
               <div className="flex w-full justify-center -mt-6 mb-6">
-                <Image src="/images/artwork/collage/lemons.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(-7deg)", marginLeft: "auto", marginRight: "auto" }} alt="" />
+                <Image src="/images/artwork/collage/lemons.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(7deg)", marginLeft: "auto", marginRight: "auto" }} alt="" />
               </div>
               <p className="font-body text-base leading-8 text-brown/80">
                 Her paintings reflect that feeling. Dressed-up animals, nature in its gentlest moods, holidays made tender and lovely — each piece is an invitation back to a place you may have half-forgotten. It is Kathy&apos;s hope that her work brings a little of that &ldquo;miraculous world&rdquo; into your home, and into the childhood of your little one.

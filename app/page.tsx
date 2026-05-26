@@ -55,7 +55,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col gap-4 items-start">
               <Link
-                href="/shop"
+                href="/portfolio"
                 className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-8 py-4 hover:bg-blue-dark transition-colors"
               >
                 Browse the Collection
@@ -84,7 +84,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-10">
             {featuredArtworks.map((artwork) => (
-              <Link key={artwork.id} href="/shop" className="group block">
+              <Link key={artwork.id} href="/portfolio" className="group block">
                 <div
                   className="relative w-full aspect-[4/5] animate-float transition-shadow duration-500"
                   style={{ transform: `rotate(${artwork.rotation})`, animationDelay: artwork.delay, animationDuration: `${7 + artwork.id}s` }}
@@ -106,7 +106,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-16">
-            <Link href="/shop" className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-brown hover:bg-cream-deeper transition-colors">
+            <Link href="/portfolio" className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-brown hover:bg-cream-deeper transition-colors">
               View All Work
             </Link>
           </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-14">
             {shopTeasers.map((piece) => (
-              <Link key={piece.id} href="/shop" className="group block">
+              <Link key={piece.id} href="/portfolio" className="group block">
                 <div className="relative w-full aspect-[4/3] overflow-hidden shadow-sm group-hover:shadow-md group-hover:scale-[1.02] transition-all duration-500">
                   <Image src={piece.src} fill className="object-cover" alt={piece.title} sizes="(max-width: 640px) 100vw, 33vw" />
                 </div>
@@ -173,8 +173,8 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/shop" className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors">
-              Browse the Collection
+            <Link href="/portfolio" className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors">
+              View the Portfolio
             </Link>
           </div>
         </div>
