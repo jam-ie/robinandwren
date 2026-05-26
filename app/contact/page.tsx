@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import Image from "next/image";
 
 // Replace YOUR_FORM_ID with your actual Formspree form ID after signing up at formspree.io
 // Or if deploying to Netlify, replace action with "#" and add data-netlify="true" to the form element.
@@ -84,7 +85,16 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-cream py-20 px-6 text-center">
+      <section className="relative bg-cream py-20 px-6 text-center overflow-hidden">
+        <div className="absolute top-6 left-[12%] opacity-80" style={{ transform: "rotate(-10deg)" }}>
+          <Image src="/images/artwork/collage/brushes.png" width={300} height={300} className="object-contain" alt="" />
+        </div>
+        <div className="absolute top-4 right-10 opacity-80" style={{ transform: "rotate(8deg)" }}>
+          <Image src="/images/artwork/collage/ribbon.png" width={280} height={280} className="object-contain" alt="" />
+        </div>
+        <div className="absolute bottom-10 right-[18%] opacity-75" style={{ transform: "rotate(-6deg)" }}>
+          <Image src="/images/artwork/collage/pinecone.png" width={270} height={270} className="object-contain" alt="" />
+        </div>
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           Say Hello
         </p>
