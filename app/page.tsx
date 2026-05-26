@@ -9,9 +9,9 @@ const featuredArtworks = [
 ];
 
 const shopTeasers = [
-  { id: 1, title: "Bunny with Carrots", category: "Animals", src: "/images/artwork/faves/bunny-with-carrots.jpg", w: 3304, h: 5034 },
-  { id: 2, title: "Bunny Delivering Hearts", category: "Holiday", src: "/images/artwork/faves/valentine-bunny-with-backpack.jpg", w: 3988, h: 5111 },
-  { id: 3, title: "Happy Easter", category: "Holiday", src: "/images/artwork/faves/easter-bunny-and-bear.jpg", w: 4781, h: 3214 },
+  { id: 1, title: "Happy Easter", category: "Holiday", src: "/images/artwork/faves/easter-bunny-and-bear.jpg", w: 4781, h: 3214 },
+  { id: 2, title: "Bunny with Carrots", category: "Animals", src: "/images/artwork/faves/bunny-with-carrots.jpg", w: 3304, h: 5034 },
+  { id: 3, title: "Christmas Tea", category: "Holiday", src: "/images/artwork/faves/christmas-tea.jpg", w: 4992, h: 3709 },
 ];
 
 export default function HomePage() {
@@ -83,7 +83,7 @@ export default function HomePage() {
             {featuredArtworks.map((artwork) => (
               <Link key={artwork.id} href="/shop" className="group block">
                 <div
-                  className="relative w-full aspect-[4/5] animate-float shadow-sm group-hover:shadow-md transition-shadow duration-500"
+                  className="relative w-full aspect-[4/5] animate-float transition-shadow duration-500"
                   style={{ transform: `rotate(${artwork.rotation})`, animationDelay: artwork.delay, animationDuration: `${7 + artwork.id}s` }}
                 >
                   <Image
@@ -157,8 +157,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-14">
             {shopTeasers.map((piece) => (
               <Link key={piece.id} href="/shop" className="group block">
-                <div className="relative w-full aspect-[3/4] shadow-sm group-hover:shadow-md group-hover:scale-[1.02] transition-all duration-500">
-                  <Image src={piece.src} fill className="object-contain" alt={piece.title} sizes="(max-width: 640px) 100vw, 33vw" />
+                <div className="relative w-full aspect-[4/3] overflow-hidden shadow-sm group-hover:shadow-md group-hover:scale-[1.02] transition-all duration-500">
+                  <Image src={piece.src} fill className="object-cover" alt={piece.title} sizes="(max-width: 640px) 100vw, 33vw" />
                 </div>
                 <p className="mt-3 font-heading text-lg font-light text-brown group-hover:text-blue transition-colors">{piece.title}</p>
                 <p className="font-body text-xs tracking-wider uppercase text-brown/50 mt-0.5">{piece.category}</p>
