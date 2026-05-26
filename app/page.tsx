@@ -72,9 +72,12 @@ export default function HomePage() {
       </section>
 
       {/* Featured Work */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark pt-10 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            <div className="flex justify-center mb-4">
+              <Image src="/images/artwork/collage/valentine-squirrel-with-wreath.png" width={180} height={180} className="object-contain" alt="" />
+            </div>
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">Featured Work</p>
             <h2 className="font-heading text-4xl md:text-5xl font-light text-brown">From the Studio</h2>
           </div>
@@ -122,7 +125,7 @@ export default function HomePage() {
         />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24">
           <div
-            className="max-w-2xl w-full text-center px-10 md:px-20 py-16"
+            className="max-w-2xl w-full text-center px-10 md:px-20 py-16 border-[6px] border-cream/40"
             style={{ backgroundColor: "rgba(88, 124, 165, 0.95)" }}
           >
             <p className="font-body text-sm tracking-[0.3em] uppercase text-cream/70 mb-6">
@@ -146,9 +149,12 @@ export default function HomePage() {
       </section>
 
       {/* Shop Teaser */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark -mt-8 pt-0 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
+            <div className="flex justify-center mb-0">
+              <Image src="/images/artwork/collage/cat-wreath.png" width={180} height={180} className="object-contain -mb-12" alt="" />
+            </div>
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">The Collection</p>
             <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-4">Art for Little Walls</h2>
             <p className="font-body text-sm text-brown/60 italic">The shop is coming soon — reach out to inquire about a piece.</p>

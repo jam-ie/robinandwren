@@ -9,17 +9,27 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-cream py-20 px-6 text-center">
+      <section className="bg-cream py-6 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           The Artist
         </p>
-        <h1 className="font-heading text-5xl md:text-6xl font-light text-brown">
-          About Kathy
-        </h1>
+        <div className="flex items-center justify-center gap-6">
+          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={125} height={125} className="object-contain -mt-16" alt="" />
+          <h1 className="font-heading text-5xl md:text-6xl font-light text-brown">
+            About Kathy
+          </h1>
+          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={125} height={125} className="object-contain -mt-16" alt="" />
+        </div>
       </section>
 
       {/* Pull Quote */}
-      <section className="bg-cream-dark py-20 px-6">
+      <section className="relative bg-cream-dark py-20 px-6 overflow-hidden">
+        <div className="absolute top-6 left-6 opacity-80" style={{ transform: "rotate(-12deg)" }}>
+          <Image src="/images/artwork/collage/tgiving-acorn.png" width={300} height={300} className="object-contain" alt="" />
+        </div>
+        <div className="absolute bottom-6 right-8 opacity-75" style={{ transform: "rotate(10deg)" }}>
+          <Image src="/images/artwork/collage/valentine-bird-nest.png" width={320} height={320} className="object-contain" alt="" />
+        </div>
         <div className="max-w-2xl mx-auto text-center">
           <div className="w-12 h-px bg-taupe mx-auto mb-12" />
           <blockquote>
@@ -37,72 +47,45 @@ export default function AboutPage() {
       </section>
 
       {/* Bio + Images */}
-      <section className="bg-cream py-24 px-6">
+      <section className="relative bg-cream py-24 px-6 overflow-hidden">
+        <div className="absolute left-4 top-36 opacity-80" style={{ transform: "rotate(8deg)" }}>
+          <Image src="/images/artwork/collage/tgiving-guinea-hen.png" width={260} height={260} className="object-contain" alt="" />
+        </div>
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* Bio text */}
             <div className="space-y-6">
               <p className="font-body text-base leading-8 text-brown/80">
-                That miraculous world is where Kathy Chandler lives as an artist.
+                Kathy Chandler captures the child&apos;s imagination in her work — as a place where animals have feelings, where seasons arrive like old friends, and where every corner of nature holds a small, unfolding story.
               </p>
               <p className="font-body text-base leading-8 text-brown/80">
-                Kathy has been drawing, painting, and creating for as long as she can
-                remember — a lifelong conversation between her imagination and a
-                paintbrush. Her watercolors began as a private joy, and slowly became
-                something she felt called to share: a line of children&apos;s art rooted
-                in wonder, warmth, and the particular innocence of early childhood.
+                Based in Quechee, Vermont, Kathy works in watercolor, painting the animal characters and seasonal scenes with the joy of a simple, unhurried and enchanting world. Her work carries the beloved childhood spirit of the classic illustrated books she read growing up.
               </p>
               <p className="font-body text-base leading-8 text-brown/80">
-                The inspiration is close to her heart. Kathy raised her own children
-                surrounded by the quiet beauty of Vermont, and those years — the seasons
-                changing, small hands reaching for things, the way everything felt
-                significant and unhurried — left a deep impression. Now, as a
-                grandmother, she finds that world again in her granddaughter, whose light
-                and curiosity remind her daily of what Chesterton meant: that childhood
-                isn&apos;t just a time of wonder. It is wonder, entire.
+                Robin &amp; Wren Art began as a way to share that world with others. Today, her watercolors find their way into nurseries, living rooms, and holiday traditions — small paintings that feel, somehow, like they&apos;ve always belonged there.
               </p>
+              <div className="flex w-full justify-center pl-36 -mt-6 mb-6">
+                <Image src="/images/artwork/collage/christmas-winter-wreath.png" width={180} height={180} className="object-contain" style={{ transform: "rotate(6deg)" }} alt="" />
+              </div>
               <p className="font-body text-base leading-8 text-brown/80">
-                Her paintings reflect that feeling. Dressed-up animals, nature in its
-                gentlest moods, holidays made tender and lovely — each piece is an
-                invitation back to a place you may have half-forgotten. It is
-                Kathy&apos;s hope that her work brings a little of that
-                &ldquo;miraculous world&rdquo; into your home, and into the childhood of
-                your little one.
+                Kathy is a self-taught artist whose work is rooted in a lifelong love of art, nature, and the stories we tell through the changing seasons. Now, as a grandmother, she finds that world again in her grandchildren, whose light and curiosity remind her daily of what Chesterton meant.
               </p>
+              <div className="flex w-full justify-center -mt-6 mb-6">
+                <Image src="/images/artwork/collage/lemons.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(-7deg)", marginLeft: "auto", marginRight: "auto" }} alt="" />
+              </div>
               <p className="font-body text-base leading-8 text-brown/80">
-                Robin &amp; Wren Children&apos;s Art is her studio, named with the same affection she
-                paints with. Welcome.
+                Her paintings reflect that feeling. Dressed-up animals, nature in its gentlest moods, holidays made tender and lovely — each piece is an invitation back to a place you may have half-forgotten. It is Kathy&apos;s hope that her work brings a little of that &ldquo;miraculous world&rdquo; into your home, and into the childhood of your little one.
               </p>
             </div>
 
             {/* Images */}
             <div className="flex flex-col gap-6">
-              {/* Portrait placeholder — swap in real photo */}
-              {/* [PLACEHOLDER] Replace this div with an <Image> of Kathy */}
-              <div
-                className="art-placeholder-4 w-full aspect-[3/4] shadow-md"
-                style={{ transform: "rotate(1.5deg)" }}
-                aria-label="[PLACEHOLDER] Portrait of Kathy Chandler"
-              >
-                <div className="flex items-end justify-center h-full pb-4">
-                  <span className="font-body text-xs text-brown/40 tracking-wider">
-                    [PLACEHOLDER] Portrait
-                  </span>
-                </div>
+              <div className="relative w-full aspect-[3/4] shadow-md overflow-hidden" style={{ transform: "rotate(1.5deg)" }}>
+                <Image src="/images/kath.jpg" fill className="object-cover" alt="Kathy Chandler" />
               </div>
 
-              {/* Studio/workspace placeholder — swap in real photo */}
-              {/* [PLACEHOLDER] Replace this div with an <Image> of the studio */}
-              <div
-                className="art-placeholder-2 w-full aspect-[4/3] shadow-md"
-                style={{ transform: "rotate(-1deg)" }}
-                aria-label="[PLACEHOLDER] Studio or workspace photo"
-              >
-                <div className="flex items-end justify-center h-full pb-4">
-                  <span className="font-body text-xs text-brown/40 tracking-wider">
-                    [PLACEHOLDER] Studio
-                  </span>
-                </div>
+              <div className="relative w-full aspect-[4/3] shadow-md overflow-hidden" style={{ transform: "rotate(-1deg)" }}>
+                <Image src="/images/workspace.jpg" fill className="object-cover" alt="Kathy's studio workspace" />
               </div>
             </div>
           </div>
@@ -110,7 +93,13 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-cream-dark py-20 px-6 text-center">
+      <section className="relative bg-cream-dark py-20 px-6 text-center overflow-hidden">
+        <div className="absolute top-4 right-10 opacity-75" style={{ transform: "rotate(8deg)" }}>
+          <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={220} height={220} className="object-contain" alt="" />
+        </div>
+        <div className="absolute bottom-4 left-8 opacity-70" style={{ transform: "rotate(-9deg)" }}>
+          <Image src="/images/artwork/collage/cupcake-0002.png" width={200} height={200} className="object-contain" alt="" />
+        </div>
         <p className="font-heading text-2xl md:text-3xl font-light italic text-brown/70 mb-8">
           Interested in a piece, or just want to say hello?
         </p>
