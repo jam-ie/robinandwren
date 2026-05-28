@@ -22,7 +22,7 @@ export default function HomePage() {
         {/* Image — right 57% of section, scales to fill height */}
         <div className="absolute right-0 top-0 w-[56%]" style={{ bottom: '-100px', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 22%)', maskImage: 'linear-gradient(to right, transparent 0%, black 22%)' }}>
           <Image
-            src="/images/walk-thru-forest.jpg"
+            src="/images/artwork/walk-thru-forest.jpg"
             fill
             className="object-cover"
             style={{ objectPosition: "center 100%" }}
@@ -116,7 +116,7 @@ export default function HomePage() {
       {/* About Teaser — full-bleed bunny pattern with French blue overlay */}
       <section className="relative overflow-hidden min-h-[600px] flex items-center">
         <Image
-          src="/images/artwork/bunny-pattern.png"
+          src="/images/artwork/bunny-pattern.webp"
           fill
           className="object-cover object-center"
           style={{ filter: "saturate(0.55) brightness(1.05)" }}

@@ -81,11 +81,11 @@ export default function AboutPage() {
             {/* Images */}
             <div className="flex flex-col gap-6">
               <div className="relative w-full aspect-[3/4] shadow-md overflow-hidden" style={{ transform: "rotate(1.5deg)" }}>
-                <Image src="/images/kath.jpg" fill className="object-cover" alt="Kathy Chandler" />
+                <Image src="/images/portrait/kath.jpg" fill className="object-cover" alt="Kathy Chandler" />
               </div>
 
               <div className="relative w-full aspect-[4/3] shadow-md overflow-hidden" style={{ transform: "rotate(-1deg)" }}>
-                <Image src="/images/workspace.jpg" fill className="object-cover" alt="Kathy's studio workspace" />
+                <Image src="/images/studio/workspace.jpg" fill className="object-cover" alt="Kathy's studio workspace" />
               </div>
             </div>
           </div>
