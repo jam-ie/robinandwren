@@ -3,7 +3,7 @@ import Link from "next/link";
 import PortfolioGalleryScrapbook from "./PortfolioGalleryScrapbook";
 
 export const metadata: Metadata = {
-  title: "Robin & Wren Children's Art — Portfolio",
+  title: "Robin & Wren Studio — Portfolio",
 };
 
 const sections = [
@@ -14,8 +14,10 @@ const sections = [
     artworks: [
       { id: 3,  title: "Fox in the Leaves",          src: "/images/artwork/faves/tgiving fox with leaves.webp",   w: 3154, h: 5003, position: "center bottom" },
       { id: 19, title: "Bluebird Nest",               src: "/images/artwork/bluebird-nest.webp",                   w: 5055, h: 3254 },
-      { id: 27, title: "Blue & White Teapot",         src: "/images/artwork/Blue and White Teapot with bird_1.webp", w: 1922, h: 3230 },
       { id: 28, title: "Bunny with Wreath",           src: "/images/artwork/bunny with wreath_1.webp",             w: 4513, h: 2761 },
+      { id: 27, title: "Blue & White Teapot",         src: "/images/artwork/Blue and White Teapot with bird.webp", w: 1920, h: 2212 },
+      { id: 31, title: "Lemons",                      src: "/images/artwork/Lemons_1.webp",                        w: 5032, h: 3280 },
+      { id: 32, title: "Fox with Basket",             src: "/images/artwork/tgiving fox with basket.webp",         w: 4939, h: 3244 },
     ],
   },
   {
@@ -24,14 +26,17 @@ const sections = [
       "Holidays deserve art that feels as special as the day itself. Kathy's seasonal designs — Christmas robins, Easter bunnies, autumn harvest scenes — are painted with the same care and warmth as her year-round work.",
     artworks: [
       { id: 1,  title: "Christmas Fox & Bunny",       src: "/images/artwork/christmas-fox-and-bunny.webp",                  w: 3220, h: 5014 },
+      { id: 14, title: "Valentine Bears",            src: "/images/artwork/valentine-bears-with-heart.webp",               w: 4982, h: 3214 },
       { id: 2,  title: "Fox Ice Skating",             src: "/images/artwork/fox-ice-skating.webp",                          w: 3306, h: 5034, position: "center bottom" },
       { id: 7,  title: "Bunnies Decorating the Tree", src: "/images/artwork/christmas bunnies decorating tree.webp",        w: 3291, h: 4723 },
+      { id: 21, title: "Christmas Bird",             src: "/images/artwork/christmas bird with ornaments.webp",            w: 3622, h: 2926 },
       { id: 13, title: "Bear with Christmas Tree",    src: "/images/artwork/christmas bear with tree.webp",                 w: 3497, h: 5088 },
       { id: 6,  title: "Bunnies with Balloons",      src: "/images/artwork/faves/valentine-bunnies-and-balloons.webp",     w: 2849, h: 5034 },
-      { id: 10, title: "Bunny Delivering Hearts",    src: "/images/artwork/faves/valentine-bunny-with-backpack.webp",      w: 3988, h: 5111 },
-      { id: 14, title: "Valentine Bears",            src: "/images/artwork/valentine-bears-with-heart.webp",               w: 4982, h: 3214 },
-      { id: 21, title: "Christmas Bird",             src: "/images/artwork/christmas bird with ornaments.webp",            w: 3622, h: 2926 },
       { id: 22, title: "Christmas Tea",              src: "/images/artwork/faves/christmas tea.webp",                      w: 4992, h: 3709 },
+      { id: 10, title: "Bunny Delivering Hearts",    src: "/images/artwork/faves/valentine-bunny-with-backpack.webp",      w: 3988, h: 5111 },
+      { id: 33, title: "Valentine Bird",             src: "/images/artwork/Valentine bird nest_1.webp",                   w: 5034, h: 3330 },
+      { id: 34, title: "Christmas Wreath",           src: "/images/artwork/Christmas Winter Wreath_1.webp",               w: 4654, h: 3182 },
+      { id: 35, title: "Heart Topiary",              src: "/images/artwork/Valentine wreath in pot_1.webp",               w: 3803, h: 5111 },
       { id: 8,  title: "Happy Easter",               src: "/images/artwork/faves/easter-bunny-and-bear.webp",              w: 4781, h: 3214 },
     ],
   },
@@ -58,27 +63,30 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-cream py-20 px-6 text-center">
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
-          The Work
-        </p>
-        <h1 className="font-heading text-5xl md:text-6xl font-light text-brown mb-6">
-          Portfolio
-        </h1>
-        <div className="max-w-xl mx-auto bg-cream-dark border border-cream-deeper px-8 py-6 mt-6">
-          <p className="font-heading text-lg font-light italic text-brown/80 leading-relaxed">
-            Interested in a piece? Reach out —{" "}
-            <Link href="/contact" className="text-blue hover:underline">
-              Kathy would love to hear from you.
-            </Link>
+      <section className="relative flex items-start justify-center text-center" style={{ height: "285px" }}>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/images/jess-bailey-l3N9Q27zULw-unsplash-cropped.png')",
+            backgroundRepeat: "repeat-x",
+            backgroundSize: "380px auto",
+            backgroundPosition: "-60px bottom",
+          }}
+        />
+        <div className="relative z-10 px-6 pt-10 pb-4">
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
+            The Work
           </p>
+          <h1 className="font-heading text-5xl md:text-6xl font-light text-brown">
+            Portfolio
+          </h1>
         </div>
       </section>
 
       <PortfolioGalleryScrapbook sections={sections} />
 
       {/* CTA */}
-      <section className="bg-cream-dark py-20 px-6 text-center border-t border-cream-deeper">
+      <section className="bg-cream-dark py-14 px-6 text-center border-t border-cream-deeper">
         <p className="font-heading text-2xl md:text-3xl font-light italic text-brown/70 mb-8">
           See something you love?
         </p>
@@ -86,7 +94,7 @@ export default function PortfolioPage() {
           href="/contact"
           className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
         >
-          Get in Touch
+          Visit the Shop
         </Link>
       </section>
     </>

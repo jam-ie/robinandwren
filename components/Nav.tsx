@@ -9,6 +9,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Portfolio" },
+  { href: "/book", label: "The Book" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -25,14 +26,14 @@ export default function Nav() {
         >
           <Image
             src="/images/artwork/logo.png"
-            alt="Robin & Wren Children's Art"
+            alt="Robin & Wren Studio"
             width={52}
             height={48}
             className="object-contain"
             priority
           />
           <span className="font-heading text-2xl font-light tracking-wide text-gray-700 group-hover:text-blue transition-colors">
-            Robin &amp; Wren Children&apos;s Art
+            Robin &amp; Wren Studio
           </span>
         </Link>
 

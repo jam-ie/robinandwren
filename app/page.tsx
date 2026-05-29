@@ -44,14 +44,14 @@ export default function HomePage() {
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 w-full">
           <div className="max-w-[38%]">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-6 whitespace-nowrap">
-              Watercolor Children&apos;s Art · Quechee, Vermont
+              Watercolor Art · Quechee, Vermont
             </p>
             <h1 className="font-heading font-light leading-[1.05] text-brown mb-8">
               <span className="block text-6xl md:text-7xl lg:text-[82px] whitespace-nowrap">Robin &amp; Wren</span>
-              <em className="block text-5xl md:text-6xl lg:text-[66px]">Children&apos;s Art</em>
+              <em className="block text-5xl md:text-6xl lg:text-[66px]">Studio</em>
             </h1>
             <p className="font-heading text-xl md:text-2xl font-light italic text-brown/60 leading-relaxed mb-10">
-              Where stories live before the words do.
+              Where every season has a story.
             </p>
             <div className="flex flex-col gap-4 items-start">
               <Link
@@ -107,7 +107,7 @@ export default function HomePage() {
 
           <div className="text-center mt-16">
             <Link href="/portfolio" className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-brown hover:bg-cream-deeper transition-colors">
-              View All Work
+              View the Portfolio
             </Link>
           </div>
         </div>
@@ -125,18 +125,14 @@ export default function HomePage() {
         />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24">
           <div
-            className="max-w-2xl w-full text-center px-10 md:px-20 py-16 border-[6px] border-cream/40"
-            style={{ backgroundColor: "rgba(88, 124, 165, 0.95)" }}
+            className="max-w-2xl w-full text-center px-10 md:px-20 py-16"
+            style={{ backgroundColor: "rgba(88, 124, 165, 0.95)", outline: "1.5px solid rgba(255,255,255,0.6)", outlineOffset: "-8px" }}
           >
             <p className="font-body text-sm tracking-[0.3em] uppercase text-cream/70 mb-6">
               The Artist
             </p>
-            <p className="font-heading text-2xl md:text-3xl font-light italic text-cream/90 leading-relaxed mb-6">
-              &ldquo;What was wonderful about childhood is that anything in it was a wonder.&rdquo;
-            </p>
-            <p className="font-body text-base text-cream/80 leading-relaxed mb-10 max-w-lg mx-auto">
-              Kathy Chandler creates watercolor children&apos;s art from her studio in Quechee, Vermont —
-              storybook paintings rooted in wonder, warmth, and the particular magic of early childhood.
+            <p className="font-heading text-[1.35rem] font-light italic text-cream/90 leading-relaxed mb-10 max-w-lg mx-auto">
+              Robin &amp; Wren is the watercolor studio of Kathy Chandler, where the seasons of New England inspire small, storybook worlds — animals at play, nature in bloom, and the gentle magic of holidays celebrated with heart. Each watercolor is a page from a story you feel sure you&apos;ve heard before.
             </p>
             <Link
               href="/about"
@@ -148,8 +144,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Book Teaser */}
+      <section className="bg-cream py-20 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          {/* Cover */}
+          <div className="shrink-0">
+            <div
+              className="relative shadow-lg overflow-hidden"
+              style={{ transform: "rotate(-1.5deg)", width: "200px", aspectRatio: "1/1" }}
+            >
+              <Image
+                src="/images/Christmas in the Forest_revised-1_page-0001.webp"
+                fill
+                className="object-cover"
+                alt="Christmas in the Forest"
+                sizes="200px"
+              />
+            </div>
+          </div>
+
+          {/* Text */}
+          <div>
+            <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-3">The Book</p>
+            <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-5">
+              Christmas in the Forest
+            </h2>
+            <p className="font-heading text-xl font-light italic text-brown/60 leading-relaxed mb-8">
+              A fully illustrated picture book — painted in watercolor, written for the wonder of early childhood.
+            </p>
+            <Link
+              href="/book"
+              className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Shop Teaser */}
-      <section className="bg-cream-dark -mt-8 pt-0 pb-24 px-6">
+      <section className="bg-cream-dark pt-0 pb-14 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-0">

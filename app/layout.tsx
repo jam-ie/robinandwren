@@ -18,7 +18,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Robin & Wren Children's Art",
+  title: "Robin & Wren Studio",
   description:
     "Storybook watercolors for the walls of childhood — and the hearts that remember it. Watercolor children's art by Kathy Chandler, Quechee, Vermont.",
 };

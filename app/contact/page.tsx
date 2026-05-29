@@ -89,11 +89,8 @@ export default function ContactPage() {
         <div className="absolute top-6 left-[12%] opacity-80" style={{ transform: "rotate(-10deg)" }}>
           <Image src="/images/artwork/collage/brushes.png" width={300} height={300} className="object-contain" alt="" />
         </div>
-        <div className="absolute top-4 right-10 opacity-80" style={{ transform: "rotate(8deg)" }}>
-          <Image src="/images/artwork/collage/ribbon.png" width={280} height={280} className="object-contain" alt="" />
-        </div>
         <div className="absolute bottom-10 right-[18%] opacity-75" style={{ transform: "rotate(-6deg)" }}>
-          <Image src="/images/artwork/collage/pinecone.png" width={270} height={270} className="object-contain" alt="" />
+          <Image src="/images/artwork/collage/pinecone.png" width={210} height={210} className="object-contain" alt="" />
         </div>
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           Say Hello
@@ -104,7 +101,13 @@ export default function ContactPage() {
       </section>
 
       {/* Form Section */}
-      <section className="bg-cream pb-28 px-6">
+      <section className="relative bg-cream pb-10 px-6 overflow-hidden">
+        <div className="absolute top-80 left-4 opacity-75" style={{ transform: "rotate(10deg)" }}>
+          <Image src="/images/artwork/collage/paint-tubes.png" width={320} height={320} className="object-contain" alt="" />
+        </div>
+        <div className="absolute top-48 right-4 opacity-75" style={{ transform: "rotate(-8deg)" }}>
+          <Image src="/images/artwork/collage/ribbon.png" width={320} height={320} className="object-contain" alt="" />
+        </div>
         <div className="max-w-2xl mx-auto">
           <p className="font-heading text-xl font-light italic text-brown/70 leading-relaxed mb-12 text-center">
             Whether you&apos;re interested in a piece, a commission, or just want to say hello —
@@ -123,6 +126,10 @@ export default function ContactPage() {
             <p className="font-heading text-xl font-light text-brown">
               Quechee, Vermont
             </p>
+          </div>
+
+          <div className="flex justify-center mt-10 -mb-4">
+            <Image src="/images/artwork/collage/tulip.png" width={300} height={300} className="object-contain" style={{ transform: "rotate(-6deg)" }} alt="" />
           </div>
         </div>
       </section>
