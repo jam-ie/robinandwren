@@ -23,7 +23,7 @@ export default function AboutPage() {
       </section>
 
       {/* Pull Quote */}
-      <section className="bg-cream-dark py-10 px-6">
+      <section className="bg-cream pt-6 pb-10 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="w-12 h-px bg-taupe mx-auto mb-8" />
           <blockquote>
