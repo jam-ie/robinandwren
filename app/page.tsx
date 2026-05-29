@@ -2,16 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const featuredArtworks = [
-  { id: 1, title: "Baguette Bear", category: "Animals", src: "/images/artwork/faves/baguette-bear.jpg", w: 3304, h: 5034, rotation: "-2deg", delay: "0s" },
-  { id: 2, title: "Bunny with Cello", category: "Animals", src: "/images/artwork/faves/bunny-with-cello.jpg", w: 3247, h: 4289, rotation: "1.5deg", delay: "1s" },
-  { id: 3, title: "Fox in the Leaves", category: "Nature & Seasons", src: "/images/artwork/faves/tgiving-fox-with-leaves.jpg", w: 3154, h: 5003, rotation: "-1deg", delay: "2s" },
-  { id: 4, title: "Bunnies with Balloons", category: "Holiday", src: "/images/artwork/faves/valentine-bunnies-and-balloons.jpg", w: 2849, h: 5034, rotation: "2deg", delay: "0.5s" },
+  { id: 1, title: "Baguette Bear", category: "Animals", src: "/images/artwork/faves/baguette-bear.webp", w: 3304, h: 5034, rotation: "-2deg", delay: "0s" },
+  { id: 2, title: "Bunny with Cello", category: "Animals", src: "/images/artwork/faves/bunny-with-cello.webp", w: 3247, h: 4289, rotation: "1.5deg", delay: "1s" },
+  { id: 3, title: "Fox in the Leaves", category: "Nature & Seasons", src: "/images/artwork/faves/tgiving fox with leaves.webp", w: 3154, h: 5003, rotation: "-1deg", delay: "2s" },
+  { id: 4, title: "Bunnies with Balloons", category: "Holiday", src: "/images/artwork/faves/valentine-bunnies-and-balloons.webp", w: 2849, h: 5034, rotation: "2deg", delay: "0.5s" },
 ];
 
 const shopTeasers = [
-  { id: 1, title: "Happy Easter", category: "Holiday", src: "/images/artwork/faves/easter-bunny-and-bear.jpg", w: 4781, h: 3214 },
-  { id: 2, title: "Bunny with Carrots", category: "Animals", src: "/images/artwork/faves/bunny-with-carrots.jpg", w: 3304, h: 5034 },
-  { id: 3, title: "Christmas Tea", category: "Holiday", src: "/images/artwork/faves/christmas-tea.jpg", w: 4992, h: 3709 },
+  { id: 1, title: "Happy Easter", category: "Holiday", src: "/images/artwork/faves/easter-bunny-and-bear.webp", w: 4781, h: 3214 },
+  { id: 2, title: "Bunny with Carrots", category: "Animals", src: "/images/artwork/faves/bunny-with-carrots.webp", w: 3304, h: 5034 },
+  { id: 3, title: "Christmas Tea", category: "Holiday", src: "/images/artwork/faves/christmas tea.webp", w: 4992, h: 3709 },
 ];
 
 export default function HomePage() {
