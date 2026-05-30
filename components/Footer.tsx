@@ -11,7 +11,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-cream border-t border-cream-deeper mt-auto">
+    <footer className="bg-paper border-t border-paper-deeper mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col items-center gap-3">
         <Link href="/" className="flex flex-col items-center gap-3">
           <Image
@@ -26,7 +26,7 @@ export default function Footer() {
           </span>
         </Link>
 
-<p className="font-heading text-lg italic text-brown/50">
+<p className="font-heading text-lg italic text-navy/50">
           Painted in Vermont. Made to be treasured.
         </p>
 
@@ -34,12 +34,12 @@ export default function Footer() {
           href="https://www.instagram.com/robinandwrenstudio"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-body text-xs tracking-widest uppercase text-brown/40 hover:text-brown/70 transition-colors"
+          className="font-body text-xs tracking-widest uppercase text-navy/40 hover:text-navy/70 transition-colors"
         >
           @robinandwrenstudio
         </a>
 
-        <p className="font-body text-xs text-brown/40 tracking-wide">
+        <p className="font-body text-xs text-navy/40 tracking-wide">
           © 2026 Robin &amp; Wren Studio / Kathy Chandler
         </p>
       </div>

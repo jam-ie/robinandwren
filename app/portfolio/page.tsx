@@ -77,7 +77,7 @@ export default function PortfolioPage() {
           <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
             The Work
           </p>
-          <h1 className="font-heading text-5xl md:text-6xl font-light text-brown">
+          <h1 className="font-heading text-5xl md:text-6xl font-light text-navy">
             Portfolio
           </h1>
         </div>
@@ -86,13 +86,13 @@ export default function PortfolioPage() {
       <PortfolioGalleryScrapbook sections={sections} />
 
       {/* CTA */}
-      <section className="bg-cream-dark py-14 px-6 text-center border-t border-cream-deeper">
-        <p className="font-heading text-2xl md:text-3xl font-light italic text-brown/70 mb-8">
+      <section className="bg-paper-dark py-14 px-6 text-center border-t border-paper-deeper">
+        <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/70 mb-8">
           See something you love?
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+          className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
         >
           Visit the Shop
         </Link>

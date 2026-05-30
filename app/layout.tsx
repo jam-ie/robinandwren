@@ -33,7 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${lato.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-cream font-body text-brown">
+      <body className="min-h-screen flex flex-col bg-paper font-body text-navy">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

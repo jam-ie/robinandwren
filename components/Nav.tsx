@@ -18,7 +18,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-cream-deeper">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-paper-deeper">
       <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link
           href="/"
@@ -46,7 +46,7 @@ export default function Nav() {
                 className={`font-body text-sm tracking-widest uppercase transition-colors ${
                   pathname === href
                     ? "text-blue border-b border-blue pb-0.5"
-                    : "text-brown/70 hover:text-brown"
+                    : "text-navy/70 hover:text-navy"
                 }`}
               >
                 {label}
@@ -62,20 +62,20 @@ export default function Nav() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-px bg-brown transition-all ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block w-6 h-px bg-navy transition-all ${open ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`block w-6 h-px bg-brown transition-all ${open ? "opacity-0" : ""}`}
+            className={`block w-6 h-px bg-navy transition-all ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block w-6 h-px bg-brown transition-all ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block w-6 h-px bg-navy transition-all ${open ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </nav>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-cream border-t border-cream-deeper px-6 py-6">
+        <div className="md:hidden bg-paper border-t border-paper-deeper px-6 py-6">
           <ul className="flex flex-col gap-6">
             {links.map(({ href, label }) => (
               <li key={href}>
@@ -83,7 +83,7 @@ export default function Nav() {
                   href={href}
                   onClick={() => setOpen(false)}
                   className={`font-body text-sm tracking-widest uppercase ${
-                    pathname === href ? "text-blue" : "text-brown/70"
+                    pathname === href ? "text-blue" : "text-navy/70"
                   }`}
                 >
                   {label}

@@ -87,7 +87,7 @@ function ArtworkCard({
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         </div>
-        <p className="mt-2 font-heading text-xl font-light text-brown/60 text-center leading-tight">
+        <p className="mt-2 font-heading text-xl font-light text-navy/60 text-center leading-tight">
           {artwork.title}
         </p>
       </div>
@@ -121,7 +121,7 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
 
   return (
     <div
-      className="bg-cream"
+      className="bg-paper"
       style={{
         backgroundImage: "url('/images/textured-paper.webp')",
         backgroundRepeat: "repeat",
@@ -136,10 +136,10 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
         >
           <div className="max-w-6xl mx-auto">
             <div className={`${si === 2 ? "mb-20" : "mb-12"} max-w-2xl`}>
-              <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-5">
+              <h2 className="font-heading text-4xl md:text-5xl font-light text-navy mb-5">
                 {section.title}
               </h2>
-              <p className="font-body text-sm leading-7 text-brown/70">
+              <p className="font-body text-sm leading-7 text-navy/70">
                 {section.description}
               </p>
             </div>
@@ -197,7 +197,7 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
       {/* Lightbox */}
       {selected && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-brown/80 backdrop-blur-sm p-6"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/80 backdrop-blur-sm p-6"
           onClick={close}
         >
           <div
@@ -206,20 +206,20 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
           >
             <button
               onClick={close}
-              className="absolute -top-10 right-0 text-cream/80 hover:text-cream font-body text-xs tracking-widest uppercase transition-colors"
+              className="absolute -top-10 right-0 text-paper/80 hover:text-paper font-body text-xs tracking-widest uppercase transition-colors"
             >
               Close ✕
             </button>
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-cream/70 hover:text-cream text-3xl transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-paper/70 hover:text-paper text-3xl transition-colors"
               aria-label="Previous"
             >
               ‹
             </button>
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-cream/70 hover:text-cream text-3xl transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-paper/70 hover:text-paper text-3xl transition-colors"
               aria-label="Next"
             >
               ›
@@ -236,14 +236,14 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
             </div>
             <div className="flex items-center justify-between w-full mt-4 px-1">
               <div>
-                <p className="font-heading text-2xl font-light text-cream">{selected.title}</p>
-                <p className="font-body text-xs tracking-widest text-cream/50 mt-1">
+                <p className="font-heading text-2xl font-light text-paper">{selected.title}</p>
+                <p className="font-body text-xs tracking-widest text-paper/50 mt-1">
                   {(index ?? 0) + 1} / {allArtworks.length}
                 </p>
               </div>
               <Link
                 href={`/contact?subject=${encodeURIComponent(`Inquiry about "${selected.title}"`)}`}
-                className="font-body text-xs tracking-widest uppercase text-cream border-b border-cream/50 pb-0.5 hover:border-cream transition-colors ml-6 shrink-0"
+                className="font-body text-xs tracking-widest uppercase text-paper border-b border-paper/50 pb-0.5 hover:border-paper transition-colors ml-6 shrink-0"
                 onClick={close}
               >
                 Inquire

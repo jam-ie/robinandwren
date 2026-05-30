@@ -12,20 +12,20 @@ export default function BookPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-cream py-16 px-6 text-center">
+      <section className="bg-paper py-16 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           The Book
         </p>
-        <h1 className="font-heading text-5xl md:text-6xl font-light text-brown mb-3">
+        <h1 className="font-heading text-5xl md:text-6xl font-light text-navy mb-3">
           Christmas in the Forest
         </h1>
-        <p className="font-heading text-xl font-light italic text-brown/50">
+        <p className="font-heading text-xl font-light italic text-navy/50">
           A hand-illustrated watercolor children&apos;s book
         </p>
       </section>
 
       {/* Cover + Story */}
-      <section className="bg-cream pb-24 px-6">
+      <section className="bg-paper pb-24 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
 
           {/* Cover */}
@@ -51,20 +51,20 @@ export default function BookPage() {
               <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-2">
                 Written &amp; Illustrated by
               </p>
-              <p className="font-heading text-2xl font-light text-brown">
+              <p className="font-heading text-2xl font-light text-navy">
                 Kathy Chandler
               </p>
             </div>
 
             <div className="w-10 h-px bg-taupe" />
 
-            <p className="font-body text-base leading-8 text-brown/80">
+            <p className="font-body text-base leading-8 text-navy/80">
               Step into a snow-dusted world of wonder. On Christmas Eve, ten-year-old Benjamin Puffin ventures into the forest to discover whether the old legend is true — do the woodland animals really gather to celebrate Christmas, and do they speak just like humans for one magical night?
             </p>
-            <p className="font-body text-base leading-8 text-brown/80">
+            <p className="font-body text-base leading-8 text-navy/80">
               To his amazement, Benjamin finds himself welcomed into a secret celebration of owls, foxes, rabbits, and squirrels. Together they fill the forest with candlelight, friendship, and joy — and Benjamin comes face to face with more than he ever could have imagined.
             </p>
-            <p className="font-body text-base leading-8 text-brown/80">
+            <p className="font-body text-base leading-8 text-navy/80">
               Every page is lovingly hand-painted in traditional watercolor, capturing the wonder of winter and the magic of kindness shared. A story families will read year after year.
             </p>
 
@@ -81,7 +81,7 @@ export default function BookPage() {
               ].map((detail) => (
                 <li key={detail} className="flex items-start gap-3">
                   <span className="text-taupe mt-1">—</span>
-                  <span className="font-body text-sm leading-7 text-brown/70">{detail}</span>
+                  <span className="font-body text-sm leading-7 text-navy/70">{detail}</span>
                 </li>
               ))}
             </ul>
@@ -90,7 +90,7 @@ export default function BookPage() {
               <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">Coming Soon</p>
               <Link
                 href="/contact?subject=Christmas in the Forest inquiry"
-                className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+                className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
               >
                 Inquire About the Book
               </Link>
@@ -100,20 +100,20 @@ export default function BookPage() {
       </section>
 
       {/* Closing quote / CTA */}
-      <section className="bg-cream-dark py-20 px-6 text-center border-t border-cream-deeper">
-        <p className="font-heading text-2xl md:text-3xl font-light italic text-brown/60 max-w-2xl mx-auto mb-10">
+      <section className="bg-paper-dark py-20 px-6 text-center border-t border-paper-deeper">
+        <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60 max-w-2xl mx-auto mb-10">
           A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact?subject=Christmas in the Forest inquiry"
-            className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+            className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
           >
             Inquire About the Book
           </Link>
           <Link
             href="/portfolio"
-            className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-brown transition-colors"
+            className="inline-block border border-navy/30 text-navy font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-navy transition-colors"
           >
             See More of Kathy&apos;s Work
           </Link>

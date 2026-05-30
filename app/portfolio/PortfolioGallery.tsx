@@ -36,14 +36,14 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
       {sections.map((section, i) => (
         <section
           key={section.title}
-          className={`${i === 0 ? "pt-8" : "pt-20"} pb-20 px-6 ${i % 2 === 0 ? "bg-cream" : "bg-cream-dark"}`}
+          className={`${i === 0 ? "pt-8" : "pt-20"} pb-20 px-6 ${i % 2 === 0 ? "bg-paper" : "bg-paper-dark"}`}
         >
           <div className="max-w-6xl mx-auto">
             <div className="mb-12 max-w-2xl">
-              <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-5">
+              <h2 className="font-heading text-4xl md:text-5xl font-light text-navy mb-5">
                 {section.title}
               </h2>
-              <p className="font-body text-sm leading-7 text-brown/70">
+              <p className="font-body text-sm leading-7 text-navy/70">
                 {section.description}
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
                       />
                     </div>
                     <div className="mt-4 flex items-start justify-between">
-                      <p className="font-heading text-xl font-light text-brown group-hover:text-blue transition-colors">{artwork.title}</p>
+                      <p className="font-heading text-xl font-light text-navy group-hover:text-blue transition-colors">{artwork.title}</p>
                       <Link
                         href={`/contact?subject=${encodeURIComponent(`Inquiry about "${artwork.title}"`)}`}
                         className="font-body text-xs tracking-widest uppercase text-blue/70 hover:text-blue border-b border-blue/30 hover:border-blue pb-0.5 transition-colors mt-1 shrink-0 ml-4"
@@ -84,7 +84,7 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
       {/* Lightbox */}
       {selected && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-brown/80 backdrop-blur-sm p-6"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/80 backdrop-blur-sm p-6"
           onClick={close}
         >
           <div
@@ -94,7 +94,7 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
             {/* Close */}
             <button
               onClick={close}
-              className="absolute -top-10 right-0 text-cream/80 hover:text-cream font-body text-xs tracking-widest uppercase transition-colors"
+              className="absolute -top-10 right-0 text-paper/80 hover:text-paper font-body text-xs tracking-widest uppercase transition-colors"
             >
               Close ✕
             </button>
@@ -102,14 +102,14 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
             {/* Prev / Next arrows */}
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-cream/70 hover:text-cream text-3xl transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-paper/70 hover:text-paper text-3xl transition-colors"
               aria-label="Previous"
             >
               ‹
             </button>
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-cream/70 hover:text-cream text-3xl transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-paper/70 hover:text-paper text-3xl transition-colors"
               aria-label="Next"
             >
               ›
@@ -130,14 +130,14 @@ export default function PortfolioGallery({ sections }: { sections: Section[] }) 
             {/* Title + counter + inquire */}
             <div className="flex items-center justify-between w-full mt-4 px-1">
               <div>
-                <p className="font-heading text-2xl font-light text-cream">{selected.title}</p>
-                <p className="font-body text-xs tracking-widest text-cream/50 mt-1">
+                <p className="font-heading text-2xl font-light text-paper">{selected.title}</p>
+                <p className="font-body text-xs tracking-widest text-paper/50 mt-1">
                   {(index ?? 0) + 1} / {allArtworks.length}
                 </p>
               </div>
               <Link
                 href={`/contact?subject=${encodeURIComponent(`Inquiry about "${selected.title}"`)}`}
-                className="font-body text-xs tracking-widest uppercase text-cream border-b border-cream/50 pb-0.5 hover:border-cream transition-colors ml-6 shrink-0"
+                className="font-body text-xs tracking-widest uppercase text-paper border-b border-paper/50 pb-0.5 hover:border-paper transition-colors ml-6 shrink-0"
                 onClick={close}
               >
                 Inquire

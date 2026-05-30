@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden min-h-[500px] flex items-center bg-cream">
+      <section className="relative overflow-hidden min-h-[500px] flex items-center bg-paper">
         {/* Image — right 57% of section, scales to fill height */}
         <div className="absolute right-0 top-0 w-[56%]" style={{ bottom: '-100px', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 22%)', maskImage: 'linear-gradient(to right, transparent 0%, black 22%)' }}>
           <Image
@@ -31,7 +31,7 @@ export default function HomePage() {
             sizes="52vw"
           />
         </div>
-        {/* Gradient: cream → transparent, wide soft fade */}
+        {/* Gradient: paper → transparent, wide soft fade */}
         <div
           className="absolute inset-0"
           style={{
@@ -40,29 +40,29 @@ export default function HomePage() {
           }}
         />
 
-        {/* Text — sits on the cream side */}
+        {/* Text — sits on the paper side */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 w-full">
           <div className="max-w-[38%]">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-6 whitespace-nowrap">
               Watercolor Art · Quechee, Vermont
             </p>
-            <h1 className="font-heading font-light leading-[1.05] text-brown mb-8">
+            <h1 className="font-heading font-light leading-[1.05] text-navy mb-8">
               <span className="block text-6xl md:text-7xl lg:text-[82px] whitespace-nowrap">Robin &amp; Wren</span>
               <em className="block text-5xl md:text-6xl lg:text-[66px]">Studio</em>
             </h1>
-            <p className="font-heading text-xl md:text-2xl font-light italic text-brown/60 leading-relaxed mb-10">
+            <p className="font-heading text-xl md:text-2xl font-light italic text-navy/60 leading-relaxed mb-10">
               Where every season has a story.
             </p>
             <div className="flex flex-col gap-4 items-start">
               <Link
                 href="/portfolio"
-                className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-8 py-4 hover:bg-blue-dark transition-colors"
+                className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-8 py-4 hover:bg-blue-dark transition-colors"
               >
                 Browse the Collection
               </Link>
               <Link
                 href="/about"
-                className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-8 py-4 hover:border-brown transition-colors"
+                className="inline-block border border-navy/30 text-navy font-body text-xs tracking-widest uppercase px-8 py-4 hover:border-navy transition-colors"
               >
                 About Kathy
               </Link>
@@ -72,14 +72,14 @@ export default function HomePage() {
       </section>
 
       {/* Featured Work */}
-      <section className="bg-cream-dark pt-10 pb-24 px-6">
+      <section className="bg-paper-dark pt-10 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex justify-center mb-4">
               <Image src="/images/artwork/collage/valentine-squirrel-with-wreath.png" width={180} height={180} className="object-contain" alt="" />
             </div>
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">Featured Work</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-light text-brown">From the Studio</h2>
+            <h2 className="font-heading text-4xl md:text-5xl font-light text-navy">From the Studio</h2>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-10">
@@ -98,15 +98,15 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="mt-4 px-1">
-                  <p className="font-heading text-lg font-light text-brown group-hover:text-blue transition-colors">{artwork.title}</p>
-                  <p className="font-body text-xs tracking-wider uppercase text-brown/50 mt-1">{artwork.category}</p>
+                  <p className="font-heading text-lg font-light text-navy group-hover:text-blue transition-colors">{artwork.title}</p>
+                  <p className="font-body text-xs tracking-wider uppercase text-navy/50 mt-1">{artwork.category}</p>
                 </div>
               </Link>
             ))}
           </div>
 
           <div className="text-center mt-16">
-            <Link href="/portfolio" className="inline-block border border-brown/30 text-brown font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-brown hover:bg-cream-deeper transition-colors">
+            <Link href="/portfolio" className="inline-block border border-navy/30 text-navy font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-navy hover:bg-paper-deeper transition-colors">
               View the Portfolio
             </Link>
           </div>
@@ -128,15 +128,15 @@ export default function HomePage() {
             className="max-w-2xl w-full text-center px-10 md:px-20 py-16"
             style={{ backgroundColor: "rgba(88, 124, 165, 0.95)", outline: "1.5px solid rgba(255,255,255,0.6)", outlineOffset: "-8px" }}
           >
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-cream/70 mb-6">
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-paper/70 mb-6">
               The Artist
             </p>
-            <p className="font-heading text-[1.35rem] font-light italic text-cream/90 leading-relaxed mb-10 max-w-lg mx-auto">
+            <p className="font-heading text-[1.35rem] font-light italic text-paper/90 leading-relaxed mb-10 max-w-lg mx-auto">
               Robin &amp; Wren is the watercolor studio of Kathy Chandler, where the seasons of New England inspire small, storybook worlds — animals at play, nature in bloom, and the gentle magic of holidays celebrated with heart. Each watercolor is a page from a story you feel sure you&apos;ve heard before.
             </p>
             <Link
               href="/about"
-              className="inline-block font-body text-sm tracking-widest uppercase text-cream border-b border-cream/50 pb-1 hover:border-cream transition-colors"
+              className="inline-block font-body text-sm tracking-widest uppercase text-paper border-b border-paper/50 pb-1 hover:border-paper transition-colors"
             >
               Read Kathy&apos;s Story
             </Link>
@@ -145,7 +145,7 @@ export default function HomePage() {
       </section>
 
       {/* Book Teaser */}
-      <section className="bg-cream py-20 px-6">
+      <section className="bg-paper py-20 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Cover */}
           <div className="shrink-0">
@@ -166,15 +166,15 @@ export default function HomePage() {
           {/* Text */}
           <div>
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-3">The Book</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-5">
+            <h2 className="font-heading text-4xl md:text-5xl font-light text-navy mb-5">
               Christmas in the Forest
             </h2>
-            <p className="font-heading text-xl font-light italic text-brown/60 leading-relaxed mb-8">
+            <p className="font-heading text-xl font-light italic text-navy/60 leading-relaxed mb-8">
               A fully illustrated picture book — painted in watercolor, written for the wonder of early childhood.
             </p>
             <Link
               href="/book"
-              className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+              className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
             >
               Learn More
             </Link>
@@ -183,15 +183,15 @@ export default function HomePage() {
       </section>
 
       {/* Shop Teaser */}
-      <section className="bg-cream-dark pt-0 pb-14 px-6">
+      <section className="bg-paper-dark pt-0 pb-14 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-0">
               <Image src="/images/artwork/collage/cat-wreath.png" width={180} height={180} className="object-contain -mb-12" alt="" />
             </div>
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">The Collection</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-light text-brown mb-4">Art for Little Walls</h2>
-            <p className="font-body text-sm text-brown/60 italic">The shop is coming soon — reach out to inquire about a piece.</p>
+            <h2 className="font-heading text-4xl md:text-5xl font-light text-navy mb-4">Art for Little Walls</h2>
+            <p className="font-body text-sm text-navy/60 italic">The shop is coming soon — reach out to inquire about a piece.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-14">
@@ -200,14 +200,14 @@ export default function HomePage() {
                 <div className="relative w-full aspect-[4/3] overflow-hidden shadow-sm group-hover:shadow-md group-hover:scale-[1.02] transition-all duration-500">
                   <Image src={piece.src} fill className="object-cover" alt={piece.title} sizes="(max-width: 640px) 100vw, 33vw" />
                 </div>
-                <p className="mt-3 font-heading text-lg font-light text-brown group-hover:text-blue transition-colors">{piece.title}</p>
-                <p className="font-body text-xs tracking-wider uppercase text-brown/50 mt-0.5">{piece.category}</p>
+                <p className="mt-3 font-heading text-lg font-light text-navy group-hover:text-blue transition-colors">{piece.title}</p>
+                <p className="font-body text-xs tracking-wider uppercase text-navy/50 mt-0.5">{piece.category}</p>
               </Link>
             ))}
           </div>
 
           <div className="text-center">
-            <Link href="/portfolio" className="inline-block bg-blue text-cream font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors">
+            <Link href="/portfolio" className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors">
               View the Portfolio
             </Link>
           </div>
