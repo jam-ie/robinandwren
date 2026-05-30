@@ -73,6 +73,7 @@ export default function PortfolioPage() {
             backgroundPosition: "-60px bottom",
           }}
         />
+        <div className="absolute inset-0 bg-paper/35" />
         <div className="relative z-10 px-6 pt-10 pb-4">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
             The Work

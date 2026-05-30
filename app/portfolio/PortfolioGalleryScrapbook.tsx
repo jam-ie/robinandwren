@@ -127,7 +127,7 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
         backgroundRepeat: "repeat",
         backgroundSize: "500px",
         backgroundBlendMode: "multiply",
-        backgroundColor: "#F8FBFF",
+        backgroundColor: "#FCFEFF",
       }}
     >
       {sections.map((section, si) => (
