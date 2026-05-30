@@ -23,8 +23,13 @@ export default function AboutPage() {
       </section>
 
       {/* Pull Quote */}
-      <section className="bg-paper-deeper pt-10 pb-10 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+      <section className="relative pt-14 pb-14 px-6 overflow-hidden" style={{
+        backgroundImage: "url('/images/sky.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center 38%",
+      }}>
+        <div className="absolute inset-0 bg-paper/60" />
+        <div className="relative z-10 max-w-2xl mx-auto text-center">
           <div className="w-12 h-px bg-taupe mx-auto mb-8" />
           <blockquote>
             <p className="font-heading text-2xl md:text-3xl italic text-navy leading-relaxed mb-6">
