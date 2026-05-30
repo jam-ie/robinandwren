@@ -182,6 +182,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Email Signup */}
+      <section className="bg-paper-deeper py-16 px-6 text-center">
+        <div className="max-w-xl mx-auto">
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">Stay in the Studio</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-light text-navy mb-4">
+            New paintings, seasonal collections,<br className="hidden md:block" /> and studio news.
+          </h2>
+          <p className="font-heading text-lg font-light italic text-navy/50 mb-10">
+            Like finding a card in the mail.
+          </p>
+          {/* Replace action with your Mailchimp or Kit form URL when ready */}
+          <form action="#" method="POST" className="flex flex-col sm:flex-row gap-3 justify-center">
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              className="flex-1 max-w-xs bg-paper border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
+            />
+            <button
+              type="submit"
+              className="bg-blue text-paper font-body text-xs tracking-widest uppercase px-8 py-3 hover:bg-blue-dark transition-colors shrink-0"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
       {/* Shop Teaser */}
       <section className="bg-paper-dark pt-0 pb-14 px-6">
         <div className="max-w-6xl mx-auto">

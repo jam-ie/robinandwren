@@ -9,11 +9,11 @@ type Section = { title: string; description: string; artworks: Artwork[]; rowLay
 
 const SECTION_ROTATIONS = [
   // Nature & Seasons
-  ["-2deg", "3deg", "-3.5deg", "1.5deg"],
+  ["-1deg", "0deg", "1.5deg", "0deg", "-1.8deg", "0.8deg"],
   // Holiday
-  ["2.5deg", "-4deg", "0.5deg", "-1.5deg", "0deg", "-2.5deg", "1deg", "-3deg", "3.5deg", "-1deg"],
+  ["1.2deg", "0deg", "-2deg", "0deg", "-0.8deg", "0deg", "-1.2deg", "0.5deg", "0deg", "1.8deg", "-0.5deg", "0deg"],
   // Nursery
-  ["-3deg", "1.5deg", "-1deg", "3.5deg", "-1.5deg", "2deg", "-2.5deg", "1deg", "-0.5deg", "2.5deg"],
+  ["-1.5deg", "0deg", "1.8deg", "0deg", "-0.5deg", "0deg", "1deg", "-1.2deg", "0deg", "1.2deg"],
 ];
 
 function getRowWidth(localIndex: number, rowLayout: number[]): string {

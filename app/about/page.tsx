@@ -9,16 +9,16 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-paper py-6 px-6 text-center">
+      <section className="bg-paper pt-6 pb-10 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           The Artist
         </p>
         <div className="flex items-center justify-center gap-6">
-          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={125} height={125} className="object-contain -mt-16" alt="" />
+          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={100} height={100} className="object-contain -mt-16" style={{ transform: "translateY(15px)" }} alt="" />
           <h1 className="font-heading text-5xl md:text-6xl font-light text-navy">
             About Kathy
           </h1>
-          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={125} height={125} className="object-contain -mt-16" alt="" />
+          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={100} height={100} className="object-contain -mt-16" style={{ transform: "translateY(15px)" }} alt="" />
         </div>
       </section>
 
@@ -51,12 +51,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* Bio text */}
             <div className="space-y-6">
-              <div className="flex w-full justify-center -mt-12">
-                <Image src="/images/artwork/collage/tgiving-guinea-hen.png" width={200} height={200} className="object-contain" alt="" />
-              </div>
               <p className="font-body text-base leading-8 text-navy/80">
                 Kathy Chandler captures a world where animals have feelings, seasons arrive like old friends, and every corner of nature holds a small, unfolding story. Working in watercolor from her studio in Quechee, Vermont, her paintings invoke the spirit of the classic illustrated books she loved growing up.
               </p>
+              <div className="flex w-full justify-center -mt-6">
+                <Image src="/images/artwork/collage/tgiving-guinea-hen.png" width={200} height={200} className="object-contain" alt="" />
+              </div>
               <p className="font-body text-base leading-8 text-navy/80">
                 Robin &amp; Wren Studio began as a way to share that world with others. Today, her watercolors find their way into nurseries, living rooms, and holiday traditions — small paintings that feel, somehow, like they&apos;ve always belonged there.
               </p>
