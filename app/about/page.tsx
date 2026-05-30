@@ -26,7 +26,7 @@ export default function AboutPage() {
       <section className="relative pt-14 pb-14 px-6 overflow-hidden" style={{
         backgroundImage: "url('/images/sky.webp')",
         backgroundSize: "cover",
-        backgroundPosition: "center 38%",
+        backgroundPosition: "center 33%",
       }}>
         <div className="absolute inset-0 bg-paper/60" />
         <div className="relative z-10 max-w-2xl mx-auto text-center">
@@ -108,7 +108,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-paper py-20 px-6 text-center">
+      <section className="bg-paper-deeper py-20 px-6 text-center">
         <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/70 mb-8">
           Interested in a piece, or just want to say hello?
         </p>
