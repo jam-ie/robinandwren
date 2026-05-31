@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* Mobile text block */}
         <div className="md:hidden px-6 pt-16 pb-10 text-center">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-6">
-            Watercolor Art · Quechee, Vermont
+            Watercolor Art · Upper Valley, Vermont
           </p>
           <h1 className="font-heading font-light leading-[1.05] text-navy mb-8">
             <span className="block text-5xl whitespace-nowrap">Robin &amp; Wren</span>
@@ -82,7 +82,7 @@ export default function HomePage() {
           <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 w-full">
             <div className="max-w-[38%]">
               <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-6 whitespace-nowrap">
-                Watercolor Art · Quechee, Vermont
+                Watercolor Art · Upper Valley, Vermont
               </p>
               <h1 className="font-heading font-light leading-[1.05] text-navy mb-8">
                 <span className="block text-6xl md:text-7xl lg:text-[82px] whitespace-nowrap">Robin &amp; Wren</span>

@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import Image from "next/image";
 
 // Replace YOUR_FORM_ID with your actual Formspree form ID after signing up at formspree.io
 // Or if deploying to Netlify, replace action with "#" and add data-netlify="true" to the form element.
@@ -84,55 +85,29 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-paper py-10 px-6 text-center">
+      <section className="bg-paper pt-10 pb-0 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           Say Hello
         </p>
-        <h1 className="font-heading text-5xl md:text-6xl font-light text-navy">
+        <h1 className="font-heading text-5xl md:text-6xl font-light text-navy mb-2">
           Get in Touch
         </h1>
+        <div className="flex justify-center">
+          <Image src="/images/artwork/collage/tgiving-acorn.png" width={180} height={180} className="object-contain" alt="" />
+        </div>
       </section>
 
       {/* Form Section */}
-      {/* Form with bunny strips */}
-      <section className="relative bg-paper px-6 overflow-hidden">
-        <div className="absolute left-0 bottom-0 w-[350px] opacity-95" style={{
-          top: "-80px",
-          backgroundColor: "#F0F4F8",
-          backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
-          backgroundSize: "750px auto",
-          backgroundRepeat: "repeat-y",
-          backgroundBlendMode: "multiply",
-          filter: "blur(0.8px)",
-          WebkitMaskImage: "linear-gradient(to right, black 75%, transparent 100%)",
-          maskImage: "linear-gradient(to right, black 75%, transparent 100%)",
-        }} />
-        <div className="absolute right-0 bottom-0 w-[350px] opacity-95" style={{
-          top: "-80px",
-          backgroundColor: "#F0F4F8",
-          backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
-          backgroundSize: "750px auto",
-          backgroundRepeat: "repeat-y",
-          backgroundBlendMode: "multiply",
-          filter: "blur(0.8px)",
-          WebkitMaskImage: "linear-gradient(to left, black 75%, transparent 100%)",
-          maskImage: "linear-gradient(to left, black 75%, transparent 100%)",
-        }} />
-        <div className="relative max-w-2xl mx-auto py-10">
-          <p className="font-heading text-xl font-light italic text-navy/70 leading-relaxed mb-12 text-center">
+      <section className="bg-paper-dark pb-10 px-6">
+        <div className="max-w-2xl mx-auto">
+          <p className="font-heading text-xl font-light italic text-navy/70 leading-relaxed mb-12 text-center pt-10">
             Whether you&apos;re interested in a piece, a commission, or just want to say hello —
             Kathy would love to hear from you.
           </p>
           <Suspense fallback={<div className="h-96 bg-paper-dark animate-pulse" />}>
             <ContactForm />
           </Suspense>
-        </div>
-      </section>
-
-      {/* Studio location — no bunnies */}
-      <section className="bg-paper pb-14 px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="pt-12 border-t border-paper-deeper text-center">
+          <div className="mt-16 pt-12 border-t border-paper-deeper text-center">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-3">
               Studio Location
             </p>

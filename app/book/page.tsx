@@ -100,23 +100,13 @@ export default function BookPage() {
       </section>
 
       {/* Closing quote / CTA */}
-      <section className="bg-paper-dark py-20 px-6 text-center border-t border-paper-deeper">
-        <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60 max-w-2xl mx-auto mb-10">
+      <section className="bg-paper-dark pt-16 pb-10 px-6 text-center border-t border-paper-deeper">
+        <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60 max-w-2xl mx-auto mb-0">
           A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact?subject=Christmas in the Forest inquiry"
-            className="inline-block bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
-          >
-            Inquire About the Book
-          </Link>
-          <Link
-            href="/portfolio"
-            className="inline-block border border-navy/30 text-navy font-body text-xs tracking-widest uppercase px-10 py-4 hover:border-navy transition-colors"
-          >
-            See More of Kathy&apos;s Work
-          </Link>
+
+        <div className="flex justify-center">
+          <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={220} height={220} className="object-contain" alt="" />
         </div>
       </section>
     </>

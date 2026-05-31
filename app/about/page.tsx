@@ -33,7 +33,7 @@ export default function AboutPage() {
               a wonder. It wasn&apos;t merely a world full of miracles; it was a
               miraculous world.&rdquo;
             </p>
-            <footer className="font-body text-xs tracking-[0.25em] uppercase text-taupe">
+            <footer className="font-body text-xs tracking-[0.25em] uppercase text-navy/60">
               — G.K. Chesterton
             </footer>
           </blockquote>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 A self-taught artist and author, Kathy&apos;s work is rooted in a lifelong love of nature and the stories we tell through the changing seasons. Now, as a grandmother, she finds that world again in her grandchildren, whose light and curiosity remind her daily of what Chesterton meant. It is her hope that each piece brings a little of that miraculous world into your home.
               </p>
               <div className="flex w-full justify-center -mt-2">
-                <Image src="/images/artwork/collage/bee-hive.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(7deg)" }} alt="" />
+                <Image src="/images/artwork/collage/bee-hive.png" width={240} height={240} className="object-contain" alt="" />
               </div>
             </div>
 
