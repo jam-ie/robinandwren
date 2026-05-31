@@ -2,7 +2,6 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import Image from "next/image";
 
 // Replace YOUR_FORM_ID with your actual Formspree form ID after signing up at formspree.io
 // Or if deploying to Netlify, replace action with "#" and add data-netlify="true" to the form element.
@@ -85,13 +84,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative bg-paper py-20 px-6 text-center overflow-hidden">
-        <div className="absolute top-6 left-[12%] opacity-80" style={{ transform: "rotate(-10deg)" }}>
-          <Image src="/images/artwork/collage/brushes.png" width={300} height={300} className="object-contain" alt="" />
-        </div>
-        <div className="absolute bottom-10 right-[18%] opacity-75" style={{ transform: "rotate(-6deg)" }}>
-          <Image src="/images/artwork/collage/pinecone.png" width={210} height={210} className="object-contain" alt="" />
-        </div>
+      <section className="bg-paper py-20 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           Say Hello
         </p>
@@ -101,35 +94,49 @@ export default function ContactPage() {
       </section>
 
       {/* Form Section */}
-      <section className="relative bg-paper pb-10 px-6 overflow-hidden">
-        <div className="absolute top-80 left-4 opacity-75" style={{ transform: "rotate(10deg)" }}>
-          <Image src="/images/artwork/collage/paint-tubes.png" width={320} height={320} className="object-contain" alt="" />
-        </div>
-        <div className="absolute top-48 right-4 opacity-75" style={{ transform: "rotate(-8deg)" }}>
-          <Image src="/images/artwork/collage/ribbon.png" width={320} height={320} className="object-contain" alt="" />
-        </div>
-        <div className="max-w-2xl mx-auto">
+      {/* Form with bunny strips */}
+      <section className="relative bg-paper px-6 overflow-hidden">
+        <div className="absolute top-0 left-0 bottom-0 w-[350px] opacity-95" style={{
+          backgroundColor: "#F0F4F8",
+          backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
+          backgroundSize: "750px auto",
+          backgroundRepeat: "repeat-y",
+          backgroundBlendMode: "multiply",
+          filter: "blur(0.8px)",
+          WebkitMaskImage: "linear-gradient(to right, black 75%, transparent 100%)",
+          maskImage: "linear-gradient(to right, black 75%, transparent 100%)",
+        }} />
+        <div className="absolute top-0 right-0 bottom-0 w-[350px] opacity-95" style={{
+          backgroundColor: "#F0F4F8",
+          backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
+          backgroundSize: "750px auto",
+          backgroundRepeat: "repeat-y",
+          backgroundBlendMode: "multiply",
+          filter: "blur(0.8px)",
+          WebkitMaskImage: "linear-gradient(to left, black 75%, transparent 100%)",
+          maskImage: "linear-gradient(to left, black 75%, transparent 100%)",
+        }} />
+        <div className="relative max-w-2xl mx-auto py-10">
           <p className="font-heading text-xl font-light italic text-navy/70 leading-relaxed mb-12 text-center">
             Whether you&apos;re interested in a piece, a commission, or just want to say hello —
             Kathy would love to hear from you.
           </p>
-
           <Suspense fallback={<div className="h-96 bg-paper-dark animate-pulse" />}>
             <ContactForm />
           </Suspense>
+        </div>
+      </section>
 
-          {/* Studio location */}
-          <div className="mt-16 pt-12 border-t border-paper-deeper text-center">
+      {/* Studio location — no bunnies */}
+      <section className="bg-paper pb-14 px-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="pt-12 border-t border-paper-deeper text-center">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-3">
               Studio Location
             </p>
             <p className="font-heading text-xl font-light text-navy">
               Quechee, Vermont
             </p>
-          </div>
-
-          <div className="flex justify-center mt-10 -mb-4">
-            <Image src="/images/artwork/collage/tulip.png" width={300} height={300} className="object-contain" style={{ transform: "rotate(-6deg)" }} alt="" />
           </div>
         </div>
       </section>

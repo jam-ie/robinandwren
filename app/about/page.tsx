@@ -13,13 +13,9 @@ export default function AboutPage() {
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           The Artist
         </p>
-        <div className="flex items-center justify-center gap-6">
-          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={100} height={100} className="object-contain -mt-16" style={{ transform: "translateY(15px)" }} alt="" />
-          <h1 className="font-heading text-5xl md:text-6xl font-light text-navy">
-            About Kathy
-          </h1>
-          <Image src="/images/artwork/collage/valentine-wreath-in-pot.png" width={100} height={100} className="object-contain -mt-16" style={{ transform: "translateY(15px)" }} alt="" />
-        </div>
+        <h1 className="font-heading text-5xl md:text-6xl font-light text-navy">
+          About Kathy
+        </h1>
       </section>
 
       {/* Pull Quote */}
@@ -64,14 +60,14 @@ export default function AboutPage() {
                 A self-taught artist and author, Kathy&apos;s work is rooted in a lifelong love of nature and the stories we tell through the changing seasons. Now, as a grandmother, she finds that world again in her grandchildren, whose light and curiosity remind her daily of what Chesterton meant. It is her hope that each piece brings a little of that miraculous world into your home.
               </p>
               <div className="flex w-full justify-center -mt-2">
-                <Image src="/images/artwork/collage/lemons.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(7deg)" }} alt="" />
+                <Image src="/images/artwork/collage/bee-hive.png" width={240} height={240} className="object-contain" style={{ transform: "rotate(7deg)" }} alt="" />
               </div>
             </div>
 
             {/* Images */}
             <div className="flex flex-col gap-6">
-              <div className="relative w-full aspect-[3/4] shadow-md overflow-hidden" style={{ transform: "rotate(1.5deg)" }}>
-                <Image src="/images/portrait/kath.jpg" fill className="object-cover" alt="Kathy Chandler" />
+              <div className="relative w-full aspect-[4/3] shadow-md overflow-hidden" style={{ transform: "rotate(1.5deg)" }}>
+                <Image src="/images/kath2.jpg" fill className="object-cover object-center" alt="Kathy Chandler" />
               </div>
 
               <div className="relative w-full aspect-[4/3] shadow-md overflow-hidden" style={{ transform: "rotate(-1deg)" }}>

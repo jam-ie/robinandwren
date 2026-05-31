@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -98,11 +98,23 @@ function ArtworkCard({
 export default function PortfolioGalleryScrapbook({ sections }: { sections: Section[] }) {
   const allArtworks = sections.flatMap((s) => s.artworks);
   const [index, setIndex] = useState<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
 
   const selected = index !== null ? allArtworks[index] : null;
   const close = useCallback(() => setIndex(null), []);
   const prev = useCallback(() => setIndex((i) => (i !== null ? (i - 1 + allArtworks.length) % allArtworks.length : null)), [allArtworks.length]);
   const next = useCallback(() => setIndex((i) => (i !== null ? (i + 1) % allArtworks.length : null)), [allArtworks.length]);
+
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const onTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 50) dx < 0 ? next() : prev();
+    touchStartX.current = null;
+  }, [next, prev]);
 
   useEffect(() => {
     if (index === null) return;
@@ -168,9 +180,9 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
               // CSS columns / scrapbook layout
               <>
                 <style>{`
-                  .scrapbook-grid { columns: 2; column-gap: 2.5rem; }
-                  .scrapbook-grid-spacious { columns: 2; column-gap: 3.5rem; }
-                  @media (min-width: 640px) { .scrapbook-grid, .scrapbook-grid-spacious { columns: 3; } }
+                  .scrapbook-grid { columns: 3; column-gap: 2rem; }
+                  .scrapbook-grid-spacious { columns: 3; column-gap: 2.5rem; }
+                  @media (min-width: 640px) { .scrapbook-grid { column-gap: 2.5rem; } .scrapbook-grid-spacious { column-gap: 3.5rem; } }
                   @media (min-width: 1024px) { .scrapbook-grid, .scrapbook-grid-spacious { columns: 4; } }
                 `}</style>
                 <div className={si >= 1 ? "scrapbook-grid-spacious" : "scrapbook-grid"}>
@@ -200,6 +212,8 @@ export default function PortfolioGalleryScrapbook({ sections }: { sections: Sect
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-navy/80 backdrop-blur-sm p-6"
           onClick={close}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
         >
           <div
             className="relative max-w-3xl w-full max-h-[90vh] flex flex-col items-center"

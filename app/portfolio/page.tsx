@@ -63,18 +63,8 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative flex items-start justify-center text-center" style={{ height: "285px" }}>
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/jess-bailey-l3N9Q27zULw-unsplash-cropped.png')",
-            backgroundRepeat: "repeat-x",
-            backgroundSize: "380px auto",
-            backgroundPosition: "-60px bottom",
-          }}
-        />
-        <div className="absolute inset-0 bg-paper/35" />
-        <div className="relative z-10 px-6 pt-10 pb-4">
+      <section className="flex justify-center text-center px-6 pt-10 pb-8" style={{ backgroundColor: "#FCFEFF", backgroundImage: "url('/images/textured-paper.webp')", backgroundRepeat: "repeat", backgroundSize: "500px", backgroundBlendMode: "multiply" }}>
+        <div>
           <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
             The Work
           </p>
