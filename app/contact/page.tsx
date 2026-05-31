@@ -84,7 +84,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-paper py-20 px-6 text-center">
+      <section className="bg-paper py-10 px-6 text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
           Say Hello
         </p>
@@ -96,7 +96,8 @@ export default function ContactPage() {
       {/* Form Section */}
       {/* Form with bunny strips */}
       <section className="relative bg-paper px-6 overflow-hidden">
-        <div className="absolute top-0 left-0 bottom-0 w-[350px] opacity-95" style={{
+        <div className="absolute left-0 bottom-0 w-[350px] opacity-95" style={{
+          top: "-80px",
           backgroundColor: "#F0F4F8",
           backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
           backgroundSize: "750px auto",
@@ -106,7 +107,8 @@ export default function ContactPage() {
           WebkitMaskImage: "linear-gradient(to right, black 75%, transparent 100%)",
           maskImage: "linear-gradient(to right, black 75%, transparent 100%)",
         }} />
-        <div className="absolute top-0 right-0 bottom-0 w-[350px] opacity-95" style={{
+        <div className="absolute right-0 bottom-0 w-[350px] opacity-95" style={{
+          top: "-80px",
           backgroundColor: "#F0F4F8",
           backgroundImage: "url('/images/artwork/bunny-pattern.webp')",
           backgroundSize: "750px auto",
