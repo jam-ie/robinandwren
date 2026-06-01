@@ -143,7 +143,7 @@ export default function Nav() {
                 <Link
                   href="/shop"
                   onClick={() => setMobileOpen(false)}
-                  className={`font-body text-sm tracking-widest uppercase ${isShopActive ? "text-blue" : "text-navy/70"}`}
+                  className={`font-body text-sm tracking-widest uppercase py-3 flex-1 ${isShopActive ? "text-blue" : "text-navy/70"}`}
                 >
                   Shop 1
                 </Link>

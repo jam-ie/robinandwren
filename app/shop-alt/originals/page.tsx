@@ -31,7 +31,7 @@ export default async function AltOriginalsPage() {
           Original Paintings
         </h1>
         <p className="font-heading text-xl font-light italic text-navy/50">
-          One of a kind. Hand-painted by Kathy in her Vermont studio.
+          One of a kind. Hand-painted in the studio.
         </p>
       </section>
 
