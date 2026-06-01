@@ -45,8 +45,8 @@ export default function HomePage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-x-0 top-0 h-24 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F0F4F8, transparent)" }} />
-          <div className="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style={{ background: "linear-gradient(to top, #F0F4F8, transparent)" }} />
+          <div className="absolute inset-x-0 top-0 h-14 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F0F4F8, transparent)" }} />
+          <div className="absolute inset-x-0 bottom-0 h-14 pointer-events-none" style={{ background: "linear-gradient(to top, #F0F4F8, transparent)" }} />
         </div>
 
         {/* Mobile button */}
