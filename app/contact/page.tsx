@@ -27,7 +27,7 @@ function ContactForm() {
             type="text"
             name="name"
             required
-            className="w-full bg-paper-dark border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
+            className="w-full bg-paper border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
             placeholder="Your name"
           />
         </div>
@@ -39,7 +39,7 @@ function ContactForm() {
             type="email"
             name="email"
             required
-            className="w-full bg-paper-dark border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
+            className="w-full bg-paper border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
             placeholder="your@email.com"
           />
         </div>
@@ -53,7 +53,7 @@ function ContactForm() {
           type="text"
           name="subject"
           defaultValue={subject}
-          className="w-full bg-paper-dark border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
+          className="w-full bg-paper border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors"
           placeholder="What's on your mind?"
         />
       </div>
@@ -66,17 +66,19 @@ function ContactForm() {
           name="message"
           required
           rows={7}
-          className="w-full bg-paper-dark border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors resize-none"
+          className="w-full bg-paper border border-paper-deeper px-4 py-3 font-body text-sm text-navy placeholder-navy/30 focus:outline-none focus:border-taupe transition-colors resize-none"
           placeholder="Tell Kathy what you're looking for..."
         />
       </div>
 
-      <button
-        type="submit"
-        className="bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
-      >
-        Send Message
-      </button>
+      <div className="flex justify-center">
+        <button
+          type="submit"
+          className="bg-blue text-paper font-body text-xs tracking-widest uppercase px-10 py-4 hover:bg-blue-dark transition-colors"
+        >
+          Send Message
+        </button>
+      </div>
     </form>
   );
 }
