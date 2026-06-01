@@ -20,7 +20,7 @@ export default async function ShopPage() {
     { id: "prints",      label: "Prints",      href: "/shop/prints",       products: prints,     description: "Hand-painted watercolors, reproduced on archival paper." },
     { id: "cards",       label: "Cards",       href: "/shop/cards",        products: cards,      description: "Greeting cards for every season. Singles or packs of 8." },
     { id: "small-goods", label: "Small Goods", href: "/shop/small-goods",  products: smallGoods, description: "Useful, beautiful things for every day." },
-    { id: "originals",   label: "Originals",   href: "/shop/originals",    products: originals,  description: "One-of-a-kind paintings, hand-painted by Kathy." },
+    { id: "originals",   label: "Originals",   href: "/shop/originals",    products: originals,  description: "One-of-a-kind paintings, hand-painted in the studio." },
   ];
 
   return (

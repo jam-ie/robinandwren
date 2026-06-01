@@ -19,7 +19,7 @@ export default async function ShopAltPage() {
     { id: "for-the-wall", label: "For the Wall", href: "/shop-alt/for-the-wall", products: forTheWall, description: "Watercolor prints in 8×10 and 11×14, reproduced on archival paper." },
     { id: "for-giving",   label: "For Giving",   href: "/shop-alt/for-giving",   products: forGiving,  description: "Cards, gift tags, and gift bags for the people you love." },
     { id: "for-the-home", label: "For the Home", href: "/shop-alt/for-the-home", products: forTheHome, description: "Tea towels, fabric & everyday goods for a beautiful home." },
-    { id: "originals",    label: "Originals",    href: "/shop-alt/originals",    products: originals,  description: "One-of-a-kind paintings, hand-painted by Kathy." },
+    { id: "originals",    label: "Originals",    href: "/shop-alt/originals",    products: originals,  description: "One-of-a-kind paintings, hand-painted in the studio." },
   ];
 
   return (
