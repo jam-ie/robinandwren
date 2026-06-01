@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getProducts } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import ShopSubNav from "@/components/ShopSubNav";
@@ -23,9 +24,9 @@ export default async function SmallGoodsPage() {
     <>
       <ShopSubNav links={shopLinks} />
       <section className="bg-paper pt-10 pb-10 px-6 text-center">
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4">
+        <Link href="/shop" className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4 hover:text-blue transition-colors inline-block">
           The Shop
-        </p>
+        </Link>
         <h1 className="font-heading text-5xl md:text-6xl font-light text-navy mb-3">
           Small Goods
         </h1>
