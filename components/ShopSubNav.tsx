@@ -10,7 +10,7 @@ export default function ShopSubNav({ links }: { links: NavLink[] }) {
 
   return (
     <nav className="sticky top-[73px] z-40 bg-white/95 backdrop-blur-sm border-b border-paper-deeper px-6">
-      <div className="max-w-5xl mx-auto flex items-center gap-8 overflow-x-auto py-3 scrollbar-none">
+      <div className="max-w-5xl mx-auto flex items-center gap-8 overflow-x-auto py-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         {links.map(({ href, label }) => (
           <Link
             key={href}

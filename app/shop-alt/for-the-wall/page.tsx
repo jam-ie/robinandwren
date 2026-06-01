@@ -22,7 +22,7 @@ export default async function ForTheWallPage() {
     <>
       <ShopSubNav links={shopLinks} />
       <section className="bg-paper pt-10 pb-10 px-6 text-center">
-        <Link href="/shop-alt" className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4 hover:text-blue transition-colors inline-block">
+        <Link href="/shop-alt" className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-4 hover:text-blue transition-colors inline-block py-2">
           The Shop
         </Link>
         <h1 className="font-heading text-5xl md:text-6xl font-light text-navy mb-3">

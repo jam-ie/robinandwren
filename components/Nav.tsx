@@ -139,12 +139,24 @@ export default function Nav() {
 
             {/* Shop sub-menu */}
             <li>
-              <button
-                className={`font-body text-sm tracking-widest uppercase flex items-center gap-2 ${isShopActive ? "text-blue" : "text-navy/70"}`}
-                onClick={() => setShopMobileOpen(!shopMobileOpen)}
-              >
-                Shop 1
-              </button>
+              <div className="flex items-center justify-between">
+                <Link
+                  href="/shop"
+                  onClick={() => setMobileOpen(false)}
+                  className={`font-body text-sm tracking-widest uppercase ${isShopActive ? "text-blue" : "text-navy/70"}`}
+                >
+                  Shop 1
+                </Link>
+                <button
+                  onClick={() => setShopMobileOpen(!shopMobileOpen)}
+                  className="ml-4 p-1 text-navy/40"
+                  aria-label="Toggle shop menu"
+                >
+                  <svg className={`w-3 h-3 transition-transform ${shopMobileOpen ? "rotate-180" : ""}`} viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+              </div>
               {shopMobileOpen && (
                 <ul className="mt-4 pl-4 flex flex-col gap-4 border-l border-paper-deeper">
                   {shopLinks.map(({ href, label }) => (
