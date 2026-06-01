@@ -107,6 +107,14 @@ export default function ContactPage() {
           <Suspense fallback={<div className="h-96 bg-paper-dark animate-pulse" />}>
             <ContactForm />
           </Suspense>
+          <div className="mt-16 pt-12 border-t border-paper-deeper text-center">
+            <p className="font-body text-xs tracking-[0.3em] uppercase text-taupe mb-3">
+              Studio Location
+            </p>
+            <p className="font-heading text-xl font-light text-navy">
+              Quechee, Vermont
+            </p>
+          </div>
         </div>
       </section>
     </>
