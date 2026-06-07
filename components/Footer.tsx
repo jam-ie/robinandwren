@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer className="bg-paper border-t border-paper-deeper mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center gap-0.5">
-        {/* Nest + tagline */}
-        <div className="flex flex-col items-center gap-1">
+        {/* Nest + tagline — desktop only */}
+        <div className="hidden md:flex flex-col items-center gap-1">
           <Image
             src="/images/artwork/logo.png"
             alt="Robin & Wren Studio"
@@ -27,9 +27,9 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Bottom row — title | copyright | instagram */}
+        {/* Bottom row — title | copyright | instagram (desktop) / copyright | instagram (mobile) */}
         <div className="w-full flex items-center justify-between">
-          <Link href="/" className="font-heading text-xl font-light tracking-wide text-gray-700 hover:text-blue transition-colors">
+          <Link href="/" className="hidden md:block font-heading text-xl font-light tracking-wide text-gray-700 hover:text-blue transition-colors">
             Robin &amp; Wren Studio
           </Link>
           <p className="font-body text-xs text-navy/40 tracking-wide">
