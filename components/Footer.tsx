@@ -32,9 +32,16 @@ export default function Footer() {
           <Link href="/" className="hidden md:block font-heading text-xl font-light tracking-wide text-gray-700 hover:text-blue transition-colors">
             Robin &amp; Wren Studio
           </Link>
-          <p className="font-body text-[10px] md:text-xs text-navy/40 tracking-wide text-center">
-            © 2026 Robin &amp; Wren Studio<br />Kathy Chandler
+          <p className="font-body text-[10px] md:text-xs text-navy/40 tracking-wide">
+            © 2026 Robin &amp; Wren Studio
           </p>
+          <Image
+            src="/images/artwork/logo.png"
+            alt=""
+            width={32}
+            height={29}
+            className="object-contain opacity-60 md:hidden"
+          />
           <a
             href="https://www.instagram.com/robinandwrenstudio"
             target="_blank"
