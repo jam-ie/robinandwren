@@ -51,13 +51,88 @@ const mockProducts: Product[] = [
     category: "prints",
     occasionCategory: "for-the-wall",
     collection: "Holiday",
-    title: "Christmas Fox & Bunny",
+    title: "The Christmas Walk",
     description:
       "A fox and a bunny share a cozy Christmas moment together, bundled up and glowing. A perennial favourite for holiday mantles and gift-giving.",
     images: ["/images/artwork/christmas-fox-and-bunny.webp"],
     variants: [
       { id: "xmas-fox-bunny-8x10",  label: "8×10",  price: 2800 },
       { id: "xmas-fox-bunny-11x14", label: "11×14", price: 4500 },
+    ],
+  },
+
+  {
+    id: "print-springtime-bunny",
+    category: "prints",
+    occasionCategory: "for-the-wall",
+    collection: "Nature & Seasons",
+    title: "Springtime Bunny",
+    description:
+      "A bunny clutches a fresh bunch of carrots, perfectly at home in the warmth of spring. Cheerful and sweet — a lovely addition to any room.",
+    images: ["/images/artwork/faves/bunny-with-carrots.webp"],
+    variants: [
+      { id: "springtime-bunny-8x10",  label: "8×10",  price: 2800 },
+      { id: "springtime-bunny-11x14", label: "11×14", price: 4500 },
+    ],
+  },
+
+  {
+    id: "print-sail-with-me",
+    category: "prints",
+    occasionCategory: "for-the-wall",
+    collection: "Nature & Seasons",
+    title: "Sail with Me",
+    description:
+      "A classic sailboat glides across sun-dappled water in this breezy, luminous watercolor. Evokes long summer days and open horizons.",
+    images: ["/images/artwork/Sailboat_1.webp"],
+    variants: [
+      { id: "sail-with-me-8x10",  label: "8×10",  price: 2800 },
+      { id: "sail-with-me-11x14", label: "11×14", price: 4500 },
+    ],
+  },
+
+  {
+    id: "print-party-time",
+    category: "prints",
+    occasionCategory: "for-the-wall",
+    collection: "Birthday & Celebration",
+    title: "Party Time",
+    description:
+      "A very festive chicken dressed for the occasion, balloon in hand and ready to celebrate. Pure joy on paper.",
+    images: ["/images/artwork/birthday chicken.webp"],
+    variants: [
+      { id: "party-time-8x10",  label: "8×10",  price: 2800 },
+      { id: "party-time-11x14", label: "11×14", price: 4500 },
+    ],
+  },
+
+  {
+    id: "print-make-a-wish",
+    category: "prints",
+    occasionCategory: "for-the-wall",
+    collection: "Birthday & Celebration",
+    title: "Make a Wish",
+    description:
+      "Bears gather around a beautiful birthday cake, candles aglow. A warm and celebratory piece for birthdays, nurseries, and anyone who loves a good party.",
+    images: ["/images/artwork/birthday-bears-cake-and-balloon.webp"],
+    variants: [
+      { id: "make-a-wish-8x10",  label: "8×10",  price: 2800 },
+      { id: "make-a-wish-11x14", label: "11×14", price: 4500 },
+    ],
+  },
+
+  {
+    id: "print-happy-birthday",
+    category: "prints",
+    occasionCategory: "for-the-wall",
+    collection: "Birthday & Celebration",
+    title: "Happy Birthday",
+    description:
+      "Two bears share a stack of cupcakes in this sweet, hand-painted birthday scene. Perfect for birthday displays, gift-giving, and anyone who believes every day deserves a cupcake.",
+    images: ["/images/artwork/birthday bears with cupcakes.webp"],
+    variants: [
+      { id: "happy-birthday-8x10",  label: "8×10",  price: 2800 },
+      { id: "happy-birthday-11x14", label: "11×14", price: 4500 },
     ],
   },
 
@@ -145,7 +220,7 @@ const mockProducts: Product[] = [
     category: "originals",
     occasionCategory: "originals",
     collection: "Originals",
-    title: "Bunny with Cello",
+    title: "Musical Bunny",
     description:
       "An original watercolor painting — one of a kind and painted by hand. A bunny sits quietly with a cello, lost in music. Unframed; approximately 7×10 inches on 140 lb. cold-press paper. Ships flat with a certificate of authenticity.",
     images: ["/images/artwork/faves/bunny-with-cello.webp"],
