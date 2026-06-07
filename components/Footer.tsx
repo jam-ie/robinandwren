@@ -27,7 +27,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Bottom row — title | copyright | instagram (desktop) / copyright | instagram (mobile) */}
+        {/* Bottom row — title | copyright | instagram (desktop) / copyright | nest | instagram (mobile) */}
         <div className="w-full flex items-center justify-between">
           <Link href="/" className="hidden md:block font-heading text-xl font-light tracking-wide text-gray-700 hover:text-blue transition-colors">
             Robin &amp; Wren Studio
@@ -35,6 +35,13 @@ export default function Footer() {
           <p className="font-body text-xs text-navy/40 tracking-wide">
             © 2026 Robin &amp; Wren Studio / Kathy Chandler
           </p>
+          <Image
+            src="/images/artwork/logo.png"
+            alt=""
+            width={32}
+            height={29}
+            className="object-contain opacity-60 md:hidden"
+          />
           <a
             href="https://www.instagram.com/robinandwrenstudio"
             target="_blank"
