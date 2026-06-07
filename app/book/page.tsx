@@ -108,7 +108,7 @@ export default function BookPage() {
             <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60">
               A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
             </p>
-            <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={240} height={240} className="object-contain w-36 md:w-52" alt="" />
+            <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={240} height={240} className="object-contain w-36 md:w-52 -mb-6" alt="" />
           </div>
 
           {/* Lifestyle photo */}
