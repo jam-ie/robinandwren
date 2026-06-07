@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BookGallery from "./BookGallery";
 
 export const metadata: Metadata = {
   title: "Robin & Wren Studio — Christmas in the Forest",
@@ -99,16 +100,31 @@ export default function BookPage() {
         </div>
       </section>
 
-      {/* Closing quote / CTA */}
-      <section className="bg-paper-dark pt-16 pb-10 px-6 text-center border-t border-paper-deeper">
-        <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60 max-w-2xl mx-auto mb-0">
-          A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
-        </p>
+      {/* Lifestyle photo + closing quote */}
+      <section className="bg-paper-dark py-16 px-6 border-t border-paper-deeper">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          {/* Quote + fox */}
+          <div className="flex flex-col items-center text-center gap-6">
+            <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60">
+              A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
+            </p>
+            <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={240} height={240} className="object-contain" alt="" />
+          </div>
 
-        <div className="flex justify-center">
-          <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={220} height={220} className="object-contain" alt="" />
+          {/* Lifestyle photo */}
+          <div className="overflow-hidden rounded-lg shadow-md">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/book/lifestyle.webp"
+              alt="Reading Christmas in the Forest"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
+
+      {/* Peek Inside: horizontal scroll strip */}
+      <BookGallery />
     </>
   );
 }

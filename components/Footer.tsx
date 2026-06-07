@@ -12,36 +12,38 @@ const links = [
 export default function Footer() {
   return (
     <footer className="bg-paper border-t border-paper-deeper mt-auto">
-      <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col items-center gap-3">
-        <Link href="/" className="flex flex-col items-center gap-3">
+      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center gap-0.5">
+        {/* Nest + tagline */}
+        <div className="flex flex-col items-center gap-1">
           <Image
             src="/images/artwork/logo.png"
             alt="Robin & Wren Studio"
-            width={64}
-            height={59}
+            width={48}
+            height={44}
             className="object-contain opacity-80"
           />
-          <span className="font-heading text-2xl font-light tracking-wide text-gray-700">
+          <p className="font-heading text-sm italic text-navy/50 leading-none">
+            Painted in Vermont. Made to be treasured.
+          </p>
+        </div>
+
+        {/* Bottom row — title | copyright | instagram */}
+        <div className="w-full flex items-center justify-between">
+          <Link href="/" className="font-heading text-xl font-light tracking-wide text-gray-700 hover:text-blue transition-colors">
             Robin &amp; Wren Studio
-          </span>
-        </Link>
-
-<p className="font-heading text-lg italic text-navy/50">
-          Painted in Vermont. Made to be treasured.
-        </p>
-
-        <a
-          href="https://www.instagram.com/robinandwrenstudio"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-body text-xs tracking-widest uppercase text-navy/40 hover:text-navy/70 transition-colors"
-        >
-          @robinandwrenstudio
-        </a>
-
-        <p className="font-body text-xs text-navy/40 tracking-wide">
-          © 2026 Robin &amp; Wren Studio / Kathy Chandler
-        </p>
+          </Link>
+          <p className="font-body text-xs text-navy/40 tracking-wide">
+            © 2026 Robin &amp; Wren Studio / Kathy Chandler
+          </p>
+          <a
+            href="https://www.instagram.com/robinandwrenstudio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-xs tracking-widest uppercase text-navy/40 hover:text-navy/70 transition-colors"
+          >
+            @robinandwrenstudio
+          </a>
+        </div>
       </div>
     </footer>
   );
