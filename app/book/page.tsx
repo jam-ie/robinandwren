@@ -104,11 +104,11 @@ export default function BookPage() {
       <section className="bg-paper-dark py-16 px-6 border-t border-paper-deeper">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Quote + fox */}
-          <div className="flex flex-col items-center text-center gap-6">
+          <div className="flex flex-col items-center text-center gap-2">
             <p className="font-heading text-2xl md:text-3xl font-light italic text-navy/60">
               A heartwarming story for cozy nights, holiday traditions, and little ones who love woodland creatures.
             </p>
-            <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={240} height={240} className="object-contain" alt="" />
+            <Image src="/images/artwork/collage/tgiving-fox-with-basket.png" width={240} height={240} className="object-contain w-36 md:w-52" alt="" />
           </div>
 
           {/* Lifestyle photo */}

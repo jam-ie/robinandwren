@@ -10,11 +10,6 @@ const linksBeforeShop = [
   { href: "/about", label: "About" },
 ];
 
-const linksAfterShop = [
-  { href: "/shop-alt", label: "Shop 2" },
-  { href: "/contact", label: "Contact" },
-];
-
 const shopLinks = [
   { href: "/shop/prints", label: "Prints" },
   { href: "/shop/cards", label: "Cards" },
@@ -24,20 +19,11 @@ const shopLinks = [
   { href: "/book", label: "The Book" },
 ];
 
-const shopAltLinks = [
-  { href: "/shop-alt/for-the-wall", label: "For the Wall" },
-  { href: "/shop-alt/for-giving",   label: "For Giving" },
-  { href: "/shop-alt/for-the-home", label: "For the Home" },
-  { href: "/shop-alt/originals",    label: "Originals" },
-];
-
-
 export default function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [shopDesktopOpen, setShopDesktopOpen] = useState(false);
   const [shopMobileOpen, setShopMobileOpen] = useState(false);
-  const [shop2MobileOpen, setShop2MobileOpen] = useState(false);
 
   const isShopActive = (pathname.startsWith("/shop") && !pathname.startsWith("/shop-alt")) || pathname === "/book";
 
@@ -65,7 +51,7 @@ export default function Nav() {
           </span>
         </Link>
 
-        {/* Desktop links — Home, About, Shop ↓, Contact */}
+        {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-10">
           {linksBeforeShop.map(({ href, label }) => (
             <li key={href}>
@@ -85,7 +71,7 @@ export default function Nav() {
                 isShopActive ? "text-blue border-b border-blue pb-0.5" : "text-navy/70 hover:text-navy"
               }`}
             >
-              Shop 1
+              Shop
             </Link>
 
             {shopDesktopOpen && (
@@ -109,11 +95,9 @@ export default function Nav() {
             )}
           </li>
 
-          {linksAfterShop.map(({ href, label }) => (
-            <li key={href}>
-              <Link href={href} className={navLinkClass(href)}>{label}</Link>
-            </li>
-          ))}
+          <li>
+            <Link href="/contact" className={navLinkClass("/contact")}>Contact</Link>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -128,7 +112,7 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile menu — Home, About, Shop ↓, Contact */}
+      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-paper border-t border-paper-deeper px-6 py-6">
           <ul className="flex flex-col gap-6">
@@ -152,7 +136,7 @@ export default function Nav() {
                   onClick={() => setMobileOpen(false)}
                   className={`font-body text-sm tracking-widest uppercase py-3 flex-1 ${isShopActive ? "text-blue" : "text-navy/70"}`}
                 >
-                  Shop 1
+                  Shop
                 </Link>
                 <button
                   onClick={() => setShopMobileOpen(!shopMobileOpen)}
@@ -167,43 +151,6 @@ export default function Nav() {
               {shopMobileOpen && (
                 <ul className="mt-4 pl-4 flex flex-col gap-4 border-l border-paper-deeper">
                   {shopLinks.map(({ href, label }) => (
-                    <li key={href}>
-                      <Link
-                        href={href}
-                        onClick={() => setMobileOpen(false)}
-                        className={`font-body text-sm tracking-widest uppercase ${pathname === href ? "text-blue" : "text-navy/60"}`}
-                      >
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-
-            {/* Shop 2 sub-menu */}
-            <li>
-              <div className="flex items-center justify-between">
-                <Link
-                  href="/shop-alt"
-                  onClick={() => setMobileOpen(false)}
-                  className={`font-body text-sm tracking-widest uppercase py-3 flex-1 ${pathname.startsWith("/shop-alt") ? "text-blue" : "text-navy/70"}`}
-                >
-                  Shop 2
-                </Link>
-                <button
-                  onClick={() => setShop2MobileOpen(!shop2MobileOpen)}
-                  className="ml-4 p-1 text-navy/40"
-                  aria-label="Toggle shop 2 menu"
-                >
-                  <svg className={`w-3 h-3 transition-transform ${shop2MobileOpen ? "rotate-180" : ""}`} viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M1 1l4 4 4-4" />
-                  </svg>
-                </button>
-              </div>
-              {shop2MobileOpen && (
-                <ul className="mt-4 pl-4 flex flex-col gap-4 border-l border-paper-deeper">
-                  {shopAltLinks.map(({ href, label }) => (
                     <li key={href}>
                       <Link
                         href={href}
