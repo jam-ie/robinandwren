@@ -32,8 +32,8 @@ export default function BookPage() {
           {/* Cover */}
           <div className="flex justify-center md:sticky md:top-28">
             <div
-              className="relative w-full max-w-sm shadow-xl overflow-hidden"
-              style={{ transform: "rotate(-1.5deg)", aspectRatio: "1/1" }}
+              className="relative w-full max-w-sm shadow-xl overflow-hidden md:[transform:rotate(-1.5deg)]"
+              style={{ aspectRatio: "1/1" }}
             >
               <Image
                 src="/images/Christmas in the Forest_revised-1_page-0001.webp"
